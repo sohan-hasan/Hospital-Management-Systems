@@ -19,20 +19,13 @@ namespace HospitalManagementApi.Migrations
                 .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-<<<<<<< HEAD
             modelBuilder.Entity("HospitalManagementApi.Models.BedInfo", b =>
                 {
                     b.Property<int>("BedId")
-=======
-            modelBuilder.Entity("HospitalManagementApi.Models.CabinInfo", b =>
-                {
-                    b.Property<int>("CabinId")
->>>>>>> 636893cce02ed540b9316fa1ea83496a3a5b5b16
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-<<<<<<< HEAD
                     b.Property<string>("BedNo")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -44,8 +37,16 @@ namespace HospitalManagementApi.Migrations
 
                     b.HasIndex("WordNo");
 
-                    b.ToTable("BedInfo");
-=======
+                    b.ToTable("BedInfos");
+                });
+
+            modelBuilder.Entity("HospitalManagementApi.Models.CabinInfo", b =>
+                {
+                    b.Property<int>("CabinId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
                     b.Property<string>("BookingStatus")
                         .IsRequired()
                         .HasMaxLength(10)
@@ -84,7 +85,6 @@ namespace HospitalManagementApi.Migrations
                     b.HasKey("CabinId");
 
                     b.ToTable("CabinInfos");
->>>>>>> 636893cce02ed540b9316fa1ea83496a3a5b5b16
                 });
 
             modelBuilder.Entity("HospitalManagementApi.Models.DoctorsInfo", b =>

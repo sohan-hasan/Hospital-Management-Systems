@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HospitalManagementApi.Migrations
 {
     [DbContext(typeof(HospitalManagementSystemContext))]
-    [Migration("20211210135850_wordinfo")]
-    partial class wordinfo
+    [Migration("20211210144423_StartAgain")]
+    partial class StartAgain
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,7 +39,54 @@ namespace HospitalManagementApi.Migrations
 
                     b.HasIndex("WordNo");
 
-                    b.ToTable("BedInfo");
+                    b.ToTable("BedInfos");
+                });
+
+            modelBuilder.Entity("HospitalManagementApi.Models.CabinInfo", b =>
+                {
+                    b.Property<int>("CabinId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("BookingStatus")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("CabinDirection")
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("CabinName")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("CabinSize")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("CabinType")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<decimal>("CostPerDay")
+                        .HasColumnType("decimal(16,2)");
+
+                    b.Property<string>("FloorNo")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("ImageName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CabinId");
+
+                    b.ToTable("CabinInfos");
                 });
 
             modelBuilder.Entity("HospitalManagementApi.Models.DoctorsInfo", b =>
