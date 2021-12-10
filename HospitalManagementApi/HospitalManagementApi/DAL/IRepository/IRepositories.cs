@@ -15,4 +15,14 @@ namespace HospitalManagementApi.DAL.IRepository
         Task Delete(int id);
         Task Save();
     }
+    public interface ICabinInfoRepository
+    {
+        Task<IEnumerable<CabinInfoViewModel>> GetAll();
+        Task<CabinInfoViewModel> GetById(int id);
+        Task<CabinInfoViewModel> Insert(CabinInfoViewModel e);
+        Task<CabinInfoViewModel> Update(CabinInfoViewModel e);
+        Task Delete(int id);
+        Task Save();
+    }
+
 }
