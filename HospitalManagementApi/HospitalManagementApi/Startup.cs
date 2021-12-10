@@ -37,6 +37,7 @@ namespace HospitalManagementApi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HospitalManagementApi", Version = "v1" });
             });
             services.AddScoped<IDoctorsInfoRepository, DoctorsInfoRepository>();
+            services.AddScoped<IWordInfoRepsoitory, WordInfoRepository>();
             services.AddCors();
         }
 

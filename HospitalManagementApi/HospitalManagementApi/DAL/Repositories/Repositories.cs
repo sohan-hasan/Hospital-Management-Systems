@@ -129,4 +129,98 @@ namespace HospitalManagementApi.DAL.Repositories
         }
 
     }
+    public class WordInfoRepository : IWordInfoRepsoitory
+    {
+        private readonly HospitalManagementSystemContext _context;
+        public WordInfoRepository(HospitalManagementSystemContext contex)
+        {
+            _context = contex;
+        }
+
+        public async Task<IEnumerable<WordInfoViewModel>> GetAll()
+        {
+            IEnumerable<WordInfoViewModel> listOfWords = await _context.WordInfos.Select(e => new WordInfoViewModel
+            {
+                WordNo=e.WordNo,
+                WordName=e.WordName,
+                WordCost=e.WordCost,
+                BookingStatus=e.BookingStatus,
+                FloorNo=e.FloorNo,
+                ImageName=e.ImageName
+            }).ToListAsync();
+            return listOfWords;
+        }
+
+        public async Task<WordInfoViewModel> GetById(int id)
+        {
+            WordInfo e = await _context.WordInfos.AsNoTracking().FirstOrDefaultAsync(e => e.WordNo == id);
+            if (e != null)
+            {
+                WordInfoViewModel word = new WordInfoViewModel
+                {
+                    WordNo = e.WordNo,
+                    WordName = e.WordName,
+                    WordCost = e.WordCost,
+                    BookingStatus = e.BookingStatus,
+                    FloorNo = e.FloorNo,
+                    ImageName = e.ImageName
+                };
+                return word;
+            }
+            return null;
+        }
+
+        public async Task<WordInfoViewModel> Insert(WordInfoViewModel e)
+        {
+            WordInfoViewModel returnObj = new WordInfoViewModel();
+            if (e != null)
+            {
+                WordInfo obj = new WordInfo()
+                {
+                    WordNo = e.WordNo,
+                    WordName = e.WordName,
+                    WordCost = e.WordCost,
+                    BookingStatus = e.BookingStatus,
+                    FloorNo = e.FloorNo,
+                    ImageName = e.ImageName
+                };
+                await _context.WordInfos.AddAsync(obj);
+                await Save();
+                returnObj = await GetById(obj.WordNo);
+            }
+            return returnObj;
+        }
+
+      
+        public async Task<WordInfoViewModel> Update(WordInfoViewModel e)
+        {
+            var result = await _context.WordInfos.FirstOrDefaultAsync(h => h.WordNo == e.WordNo);
+            WordInfoViewModel returnObj = new WordInfoViewModel();
+            if (result != null)
+            {
+                result.WordNo = e.WordNo;
+                result.WordName = e.WordName;
+                result.WordCost = e.WordCost;
+                result.BookingStatus = e.BookingStatus;
+                result.FloorNo = e.FloorNo;
+                result.ImageName = e.ImageName;
+            }
+            await Save();
+            returnObj = await GetById(result.WordNo);
+            return returnObj;
+        }
+        public async Task Save()
+        {
+            await _context.SaveChangesAsync();
+        }
+        public async Task Delete(int id)
+        {
+            var result = await _context.WordInfos.FirstOrDefaultAsync(p => p.WordNo == id);
+            if (result != null)
+            {
+                _context.WordInfos.Remove(result);
+                await _context.SaveChangesAsync();
+            }
+        }
+    }
 }

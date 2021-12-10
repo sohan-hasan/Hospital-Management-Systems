@@ -15,6 +15,7 @@ namespace HospitalManagementApi.ViewModels
         }
 
         public virtual DbSet<DoctorsInfo> DoctorsInfos { get; set; }
+        public virtual DbSet<WordInfo> WordInfos { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

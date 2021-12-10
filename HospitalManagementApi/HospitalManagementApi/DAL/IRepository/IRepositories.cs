@@ -15,4 +15,13 @@ namespace HospitalManagementApi.DAL.IRepository
         Task Delete(int id);
         Task Save();
     }
+    public interface IWordInfoRepsoitory
+    {
+        Task<IEnumerable<WordInfoViewModel>> GetAll();
+        Task<WordInfoViewModel> GetById(int id);
+        Task<WordInfoViewModel> Insert(WordInfoViewModel e);
+        Task<WordInfoViewModel> Update(WordInfoViewModel e);
+        Task Delete(int id);
+        Task Save();
+    }
 }
