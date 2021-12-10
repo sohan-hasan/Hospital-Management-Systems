@@ -129,6 +129,7 @@ namespace HospitalManagementApi.DAL.Repositories
         }
 
     }
+<<<<<<< HEAD
     public class WordInfoRepository : IWordInfoRepsoitory
     {
         private readonly HospitalManagementSystemContext _context;
@@ -166,10 +167,55 @@ namespace HospitalManagementApi.DAL.Repositories
                     ImageName = e.ImageName
                 };
                 return word;
+=======
+    public class CabinInfoRepository : ICabinInfoRepository
+    {
+        private readonly HospitalManagementSystemContext _context;
+        public CabinInfoRepository(HospitalManagementSystemContext contex)
+        {
+            _context = contex;
+        }
+        public async Task<IEnumerable<CabinInfoViewModel>> GetAll()
+        {
+            IEnumerable<CabinInfoViewModel> listOfCabin = await _context.CabinInfos.Select(e => new CabinInfoViewModel
+            {
+                CabinId = e.CabinId,
+                CabinName = e.CabinName,
+                CabinType = e.CabinType,
+                CabinSize = e.CabinSize,
+                FloorNo = e.FloorNo,
+                CostPerDay = e.CostPerDay,
+                BookingStatus = e.BookingStatus,
+                CabinDirection = e.CabinDirection,
+                ImageName = e.ImageName
+            }).ToListAsync();
+            return listOfCabin;
+        }
+
+        public async Task<CabinInfoViewModel> GetById(int id)
+        {
+            CabinInfo e = await _context.CabinInfos.AsNoTracking().FirstOrDefaultAsync(e => e.CabinId == id);
+            if (e != null)
+            {
+                CabinInfoViewModel cabin = new CabinInfoViewModel
+                {
+                    CabinId = e.CabinId,
+                    CabinName = e.CabinName,
+                    CabinType = e.CabinType,
+                    CabinSize = e.CabinSize,
+                    FloorNo = e.FloorNo,
+                    CostPerDay = e.CostPerDay,
+                    BookingStatus = e.BookingStatus,
+                    CabinDirection = e.CabinDirection,
+                    ImageName = e.ImageName
+                };
+                return cabin;
+>>>>>>> 636893cce02ed540b9316fa1ea83496a3a5b5b16
             }
             return null;
         }
 
+<<<<<<< HEAD
         public async Task<WordInfoViewModel> Insert(WordInfoViewModel e)
         {
             WordInfoViewModel returnObj = new WordInfoViewModel();
@@ -187,10 +233,34 @@ namespace HospitalManagementApi.DAL.Repositories
                 await _context.WordInfos.AddAsync(obj);
                 await Save();
                 returnObj = await GetById(obj.WordNo);
+=======
+        public async Task<CabinInfoViewModel> Insert(CabinInfoViewModel e)
+        {
+            CabinInfoViewModel returnObj = new CabinInfoViewModel();
+            if (e != null)
+            {
+                CabinInfo obj = new CabinInfo()
+                {
+
+                    CabinId = e.CabinId,
+                    CabinName = e.CabinName,
+                    CabinType = e.CabinType,
+                    CabinSize = e.CabinSize,
+                    FloorNo = e.FloorNo,
+                    CostPerDay = e.CostPerDay,
+                    BookingStatus = e.BookingStatus,
+                    CabinDirection = e.CabinDirection,
+                    ImageName = e.ImageName,
+                };
+                await _context.CabinInfos.AddAsync(obj);
+                await Save();
+                returnObj = await GetById(obj.CabinId);
+>>>>>>> 636893cce02ed540b9316fa1ea83496a3a5b5b16
             }
             return returnObj;
         }
 
+<<<<<<< HEAD
       
         public async Task<WordInfoViewModel> Update(WordInfoViewModel e)
         {
@@ -222,5 +292,43 @@ namespace HospitalManagementApi.DAL.Repositories
                 await _context.SaveChangesAsync();
             }
         }
+=======
+
+        public async Task<CabinInfoViewModel> Update(CabinInfoViewModel e)
+        {
+            var result = await _context.CabinInfos.FirstOrDefaultAsync(h => h.CabinId == e.CabinId);
+            CabinInfoViewModel returnObj = new CabinInfoViewModel();
+            if (result != null)
+            {
+                result.CabinId = e.CabinId;
+                result.CabinName = e.CabinName;
+                result.CabinType = e.CabinType;
+                result.CabinSize = e.CabinSize;
+                result.FloorNo = e.FloorNo;
+                result.CostPerDay = e.CostPerDay;
+                result.BookingStatus = e.BookingStatus;
+                result.CabinDirection = e.CabinDirection;
+                result.ImageName = e.ImageName;
+            }
+            await Save();
+            returnObj = await GetById(result.CabinId);
+            return returnObj;
+        }
+
+        public async Task Delete(int id)
+        {
+            var result = await _context.CabinInfos.FirstOrDefaultAsync(p => p.CabinId == id);
+            if (result != null)
+            {
+                _context.CabinInfos.Remove(result);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        public async Task Save()
+        {
+            await _context.SaveChangesAsync();
+        }
+>>>>>>> 636893cce02ed540b9316fa1ea83496a3a5b5b16
     }
 }

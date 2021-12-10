@@ -15,6 +15,7 @@ namespace HospitalManagementApi.DAL.IRepository
         Task Delete(int id);
         Task Save();
     }
+<<<<<<< HEAD
     public interface IWordInfoRepsoitory
     {
         Task<IEnumerable<WordInfoViewModel>> GetAll();
@@ -24,4 +25,16 @@ namespace HospitalManagementApi.DAL.IRepository
         Task Delete(int id);
         Task Save();
     }
+=======
+    public interface ICabinInfoRepository
+    {
+        Task<IEnumerable<CabinInfoViewModel>> GetAll();
+        Task<CabinInfoViewModel> GetById(int id);
+        Task<CabinInfoViewModel> Insert(CabinInfoViewModel e);
+        Task<CabinInfoViewModel> Update(CabinInfoViewModel e);
+        Task Delete(int id);
+        Task Save();
+    }
+
+>>>>>>> 636893cce02ed540b9316fa1ea83496a3a5b5b16
 }

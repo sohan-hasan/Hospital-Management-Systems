@@ -4,14 +4,16 @@ using HospitalManagementApi.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HospitalManagementApi.Migrations
 {
     [DbContext(typeof(HospitalManagementSystemContext))]
-    partial class HospitalManagementSystemContextModelSnapshot : ModelSnapshot
+    [Migration("20211210135828_initws")]
+    partial class initws
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -19,33 +21,13 @@ namespace HospitalManagementApi.Migrations
                 .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-<<<<<<< HEAD
-            modelBuilder.Entity("HospitalManagementApi.Models.BedInfo", b =>
-                {
-                    b.Property<int>("BedId")
-=======
             modelBuilder.Entity("HospitalManagementApi.Models.CabinInfo", b =>
                 {
                     b.Property<int>("CabinId")
->>>>>>> 636893cce02ed540b9316fa1ea83496a3a5b5b16
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-<<<<<<< HEAD
-                    b.Property<string>("BedNo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("WordNo")
-                        .HasColumnType("int");
-
-                    b.HasKey("BedId");
-
-                    b.HasIndex("WordNo");
-
-                    b.ToTable("BedInfo");
-=======
                     b.Property<string>("BookingStatus")
                         .IsRequired()
                         .HasMaxLength(10)
@@ -84,7 +66,6 @@ namespace HospitalManagementApi.Migrations
                     b.HasKey("CabinId");
 
                     b.ToTable("CabinInfos");
->>>>>>> 636893cce02ed540b9316fa1ea83496a3a5b5b16
                 });
 
             modelBuilder.Entity("HospitalManagementApi.Models.DoctorsInfo", b =>
@@ -145,54 +126,6 @@ namespace HospitalManagementApi.Migrations
                     b.HasKey("DoctorId");
 
                     b.ToTable("DoctorsInfos");
-                });
-
-            modelBuilder.Entity("HospitalManagementApi.Models.WordInfo", b =>
-                {
-                    b.Property<int>("WordNo")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("BookingStatus")
-                        .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
-
-                    b.Property<string>("FloorNo")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.Property<string>("ImageName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("WordCost")
-                        .HasColumnType("decimal(16,2)");
-
-                    b.Property<string>("WordName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("WordNo");
-
-                    b.ToTable("WordInfos");
-                });
-
-            modelBuilder.Entity("HospitalManagementApi.Models.BedInfo", b =>
-                {
-                    b.HasOne("HospitalManagementApi.Models.WordInfo", "WordInfo")
-                        .WithMany("BedInfos")
-                        .HasForeignKey("WordNo")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("WordInfo");
-                });
-
-            modelBuilder.Entity("HospitalManagementApi.Models.WordInfo", b =>
-                {
-                    b.Navigation("BedInfos");
                 });
 #pragma warning restore 612, 618
         }
