@@ -31,15 +31,16 @@ namespace HospitalManagementApi.Models
         [Required]
         public int CommissionStatus { get; set; }
         public string ImageName { get; set; }
+        public virtual ICollection<OutDoorConsultancy> OutDoorConsultancies { get; set; }
     }
-    public class WordInfo
+    public class WardInfo
     {
         [Key]
-        public int WordNo { get; set; }
+        public int WardNo { get; set; }
         [Required]
-        public string WordName { get; set; }
+        public string WardName { get; set; }
         [Required, Column(TypeName = "decimal(16, 2)")]
-        public decimal WordCost { get; set; }
+        public decimal WardCost { get; set; }
         [Required, MaxLength(10)]
         public string BookingStatus { get; set; }
 
@@ -58,9 +59,9 @@ namespace HospitalManagementApi.Models
         public string BedNo { get; set; }
 
         [Required]
-        public int WordNo { get; set; }
-        [ForeignKey("WordNo")]
-        public virtual WordInfo WordInfo { get; set; }
+        public int WardNo { get; set; }
+        [ForeignKey("WardNo")]
+        public virtual WardInfo WardInfo { get; set; }
     }
     public class CabinInfo
     {
@@ -153,6 +154,8 @@ namespace HospitalManagementApi.Models
         public string Phone { get; set; }
         [Required, MaxLength(500)]
         public string Testifications { get; set; }
+        [ForeignKey("DoctorId")]
+        public virtual DoctorsInfo DoctorsInfo { get; set; }
     }
     public class PatientInfo
     {

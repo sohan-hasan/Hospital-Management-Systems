@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HospitalManagementApi.Migrations
 {
     [DbContext(typeof(HospitalManagementSystemContext))]
-    [Migration("20211210144423_StartAgain")]
-    partial class StartAgain
+    [Migration("20211210203808_start-again")]
+    partial class startagain
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,41 @@ namespace HospitalManagementApi.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("HospitalManagementApi.Models.AppointmentInfo", b =>
+                {
+                    b.Property<int>("AppointmentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("AppointmentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("AppointmentTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ArrivalTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("NextAppointmentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Remark")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int>("SerialNo")
+                        .HasColumnType("int");
+
+                    b.HasKey("AppointmentId");
+
+                    b.ToTable("AppoinmentInfos");
+                });
 
             modelBuilder.Entity("HospitalManagementApi.Models.BedInfo", b =>
                 {
@@ -32,12 +67,12 @@ namespace HospitalManagementApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("WordNo")
+                    b.Property<int>("WardNo")
                         .HasColumnType("int");
 
                     b.HasKey("BedId");
 
-                    b.HasIndex("WordNo");
+                    b.HasIndex("WardNo");
 
                     b.ToTable("BedInfos");
                 });
@@ -149,9 +184,100 @@ namespace HospitalManagementApi.Migrations
                     b.ToTable("DoctorsInfos");
                 });
 
-            modelBuilder.Entity("HospitalManagementApi.Models.WordInfo", b =>
+            modelBuilder.Entity("HospitalManagementApi.Models.OutDoorConsultancy", b =>
                 {
-                    b.Property<int>("WordNo")
+                    b.Property<int>("OutDoorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("EntryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Gender")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("PatientName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.Property<string>("Prescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SerialNo")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Testifications")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.HasKey("OutDoorId");
+
+                    b.HasIndex("DoctorId");
+
+                    b.ToTable("OutDoorConsultancies");
+                });
+
+            modelBuilder.Entity("HospitalManagementApi.Models.TestInfo", b =>
+                {
+                    b.Property<int>("TestId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<decimal>("CashToDoctor")
+                        .HasColumnType("decimal(16,2)");
+
+                    b.Property<decimal>("PercentangeToDoctor")
+                        .HasColumnType("decimal(16,2)");
+
+                    b.Property<string>("Remarks")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<decimal>("TestCost")
+                        .HasColumnType("decimal(16,2)");
+
+                    b.Property<string>("TestName")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("Unit")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("TestId");
+
+                    b.ToTable("TestInfos");
+                });
+
+            modelBuilder.Entity("HospitalManagementApi.Models.WardInfo", b =>
+                {
+                    b.Property<int>("WardNo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -169,30 +295,46 @@ namespace HospitalManagementApi.Migrations
                     b.Property<string>("ImageName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("WordCost")
+                    b.Property<decimal>("WardCost")
                         .HasColumnType("decimal(16,2)");
 
-                    b.Property<string>("WordName")
+                    b.Property<string>("WardName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("WordNo");
+                    b.HasKey("WardNo");
 
-                    b.ToTable("WordInfos");
+                    b.ToTable("WardInfos");
                 });
 
             modelBuilder.Entity("HospitalManagementApi.Models.BedInfo", b =>
                 {
-                    b.HasOne("HospitalManagementApi.Models.WordInfo", "WordInfo")
+                    b.HasOne("HospitalManagementApi.Models.WardInfo", "WardInfo")
                         .WithMany("BedInfos")
-                        .HasForeignKey("WordNo")
+                        .HasForeignKey("WardNo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("WordInfo");
+                    b.Navigation("WardInfo");
                 });
 
-            modelBuilder.Entity("HospitalManagementApi.Models.WordInfo", b =>
+            modelBuilder.Entity("HospitalManagementApi.Models.OutDoorConsultancy", b =>
+                {
+                    b.HasOne("HospitalManagementApi.Models.DoctorsInfo", "DoctorsInfo")
+                        .WithMany("OutDoorConsultancies")
+                        .HasForeignKey("DoctorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DoctorsInfo");
+                });
+
+            modelBuilder.Entity("HospitalManagementApi.Models.DoctorsInfo", b =>
+                {
+                    b.Navigation("OutDoorConsultancies");
+                });
+
+            modelBuilder.Entity("HospitalManagementApi.Models.WardInfo", b =>
                 {
                     b.Navigation("BedInfos");
                 });

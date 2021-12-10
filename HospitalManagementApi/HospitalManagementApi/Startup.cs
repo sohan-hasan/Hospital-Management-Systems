@@ -36,11 +36,16 @@ namespace HospitalManagementApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "HospitalManagementApi", Version = "v1" });
             });
+
+
             services.AddScoped<IDoctorsInfoRepository, DoctorsInfoRepository>();
-
-            services.AddScoped<IWordInfoRepsoitory, WordInfoRepository>();
-
-            //services.AddScoped<ICabinInfoRepository, CabinInfoRepository>();
+            services.AddScoped<IWardInfoRepsoitory, WardInfoRepository>();
+            services.AddScoped<ICabinInfoRepository, CabinInfoRepository>();
+            services.AddScoped<IBedInfoRepository, BedInfoRepository>();
+            services.AddScoped<IAppointmentInfoRepository, AppointmentInfoRepository>();
+            services.AddScoped<ITestInfoRepository, TestInfoRepository>();
+            services.AddScoped<IOutDoorConsultancyRepository, OutDoorConsultancyRepository>();
+            
 
             services.AddCors();
         }

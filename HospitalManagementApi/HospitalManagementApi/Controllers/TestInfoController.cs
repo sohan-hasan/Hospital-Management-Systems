@@ -11,19 +11,19 @@ namespace HospitalManagementApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class WordInfoController : ControllerBase
+    public class TestInfoController : ControllerBase
     {
-        private readonly IWardInfoRepsoitory _iWordsInfoRepository;
-        public WordInfoController(IWardInfoRepsoitory iWordsInfoRepository)
+        private readonly ITestInfoRepository _itestInfoRepository;
+        public TestInfoController(ITestInfoRepository itestInfoRepository)
         {
-            _iWordsInfoRepository = iWordsInfoRepository;
+            this._itestInfoRepository = itestInfoRepository;
         }
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
             try
             {
-                return Ok(await _iWordsInfoRepository.GetAll());
+                return Ok(await _itestInfoRepository.GetAll());
             }
             catch (Exception)
             {
@@ -31,11 +31,11 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<WardInfoViewModel>> GetById(int id)
+        public async Task<ActionResult<TestInfoViewModel>> GetById(int id)
         {
             try
             {
-                var result = await _iWordsInfoRepository.GetById(id);
+                var result = await _itestInfoRepository.GetById(id);
                 if (result == null)
                 {
                     return NotFound();
@@ -48,7 +48,7 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpPost]
-        public async Task<ActionResult<WardInfoViewModel>> Insert(WardInfoViewModel obj)
+        public async Task<ActionResult<TestInfoViewModel>> Insert(TestInfoViewModel obj)
         {
             try
             {
@@ -56,14 +56,14 @@ namespace HospitalManagementApi.Controllers
                 {
                     return BadRequest();
                 }
-                var word = await _iWordsInfoRepository.GetById(obj.WardNo);
-                if (word != null)
+                var test = await _itestInfoRepository.GetById(obj.TestId);
+                if (test != null)
                 {
-                    ModelState.AddModelError("", "Word is already Add");
+                    ModelState.AddModelError("", "Test is already Add");
                     return BadRequest(ModelState);
                 }
-                var returnObj = await _iWordsInfoRepository.Insert(obj);
-                return CreatedAtAction(nameof(GetAll), new { id = returnObj.WardNo }, returnObj);
+                var returnObj = await _itestInfoRepository.Insert(obj);
+                return CreatedAtAction(nameof(GetAll), new { id = returnObj.TestId }, returnObj);
             }
             catch (Exception)
             {
@@ -71,20 +71,20 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpPut("{id:int}")]
-        public async Task<ActionResult<WardInfoViewModel>> Update(int id, WardInfoViewModel obj)
+        public async Task<ActionResult<TestInfoViewModel>> Update(int id, TestInfoViewModel obj)
         {
             try
             {
-                if (id != obj.WardNo)
+                if (id != obj.TestId)
                 {
-                    return BadRequest("Word Id mismatch");
+                    return BadRequest("Test Id mismatch");
                 }
-                var word = await _iWordsInfoRepository.GetById(id);
-                if (word == null)
+                var test = await _itestInfoRepository.GetById(id);
+                if (test == null)
                 {
                     return NotFound();
                 }
-                return await _iWordsInfoRepository.Update(obj);
+                return await _itestInfoRepository.Update(obj);
             }
             catch (Exception)
             {
@@ -96,12 +96,12 @@ namespace HospitalManagementApi.Controllers
         {
             try
             {
-                var word = await _iWordsInfoRepository.GetById(id);
-                if (word == null)
+                var test = await _itestInfoRepository.GetById(id);
+                if (test == null)
                 {
                     return NotFound();
                 }
-                await _iWordsInfoRepository.Delete(id);
+                await _itestInfoRepository.Delete(id);
                 return Ok();
             }
             catch (Exception)

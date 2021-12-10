@@ -32,14 +32,14 @@ namespace HospitalManagementApi.ViewModels
         public string ImageName { get; set; }
     }
 
-    public class WordInfoViewModel
+    public class WardInfoViewModel
     {
         [Key]
-        public int WordNo { get; set; }
+        public int WardNo { get; set; }
         [Required]
-        public string WordName { get; set; }
+        public string WardName { get; set; }
         
-        public decimal WordCost { get; set; }
+        public decimal WardCost { get; set; }
         [Required, MaxLength(10)]
         public string BookingStatus { get; set; }
 
@@ -55,7 +55,7 @@ namespace HospitalManagementApi.ViewModels
         [Required]
         public string BedNo { get; set; }
         [Required]
-        public int WordNo { get; set; }
+        public int WardNo { get; set; }
     }
     public class CabinInfoViewModel
     {
@@ -78,5 +78,62 @@ namespace HospitalManagementApi.ViewModels
 
         public string ImageName { get; set; }
 
+    }
+    public class TestInfoViewModel
+    {
+        [Key]
+        public int TestId { get; set; }
+        [Required, MaxLength(30)]
+        public string TestName { get; set; }
+        [Required, Column(TypeName = "decimal(16, 2)")]
+        public decimal TestCost { get; set; }
+        [Required, MaxLength(30)]
+        public string Remarks { get; set; }
+        [Required, Column(TypeName = "decimal(16, 2)")]
+        public decimal PercentangeToDoctor { get; set; }
+        [Required, MaxLength(100)]
+        public string Unit { get; set; }
+        [Required, Column(TypeName = "decimal(16, 2)")]
+        public decimal CashToDoctor { get; set; }
+    }
+    public class AppointmentInfoViewModel
+    {
+        [Key]
+        public int AppointmentId { get; set; }
+        [Required]
+        public DateTime AppointmentDate { get; set; }
+        [Required]
+        public int DoctorId { get; set; }
+        [Required]
+        public int SerialNo { get; set; }
+        public DateTime AppointmentTime { get; set; }
+        public DateTime ArrivalTime { get; set; }
+        public DateTime NextAppointmentDate { get; set; }
+        [Required, MaxLength(200)]
+        public string Remark { get; set; }
+    }
+    public class OutDoorConsultancyViewModel
+    {
+        [Key]
+        public int OutDoorId { get; set; }
+        [Required]
+        public int DoctorId { get; set; }
+        [Required]
+        public int SerialNo { get; set; }
+        public DateTime EntryDate { get; set; }
+        [Required, MaxLength(50)]
+        public string PatientName { get; set; }
+        [Required, MaxLength(10)]
+        public string Gender { get; set; }
+        [Required]
+        public int Age { get; set; }
+        [Required]
+        public string Prescription { get; set; }
+        [Required, MaxLength(50)]
+        public string Address { get; set; }
+        [Required, MaxLength(15)]
+        public string Phone { get; set; }
+        [Required, MaxLength(500)]
+        public string Testifications { get; set; }
     }
 }

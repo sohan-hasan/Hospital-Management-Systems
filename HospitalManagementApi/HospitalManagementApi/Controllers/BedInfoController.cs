@@ -11,19 +11,19 @@ namespace HospitalManagementApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class WordInfoController : ControllerBase
+    public class BedInfoController : ControllerBase
     {
-        private readonly IWardInfoRepsoitory _iWordsInfoRepository;
-        public WordInfoController(IWardInfoRepsoitory iWordsInfoRepository)
+        private readonly IBedInfoRepository _iBedInfoRepository;
+        public BedInfoController(IBedInfoRepository IBedInfoRepository)
         {
-            _iWordsInfoRepository = iWordsInfoRepository;
+            _iBedInfoRepository = IBedInfoRepository;
         }
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
             try
             {
-                return Ok(await _iWordsInfoRepository.GetAll());
+                return Ok(await _iBedInfoRepository.GetAll());
             }
             catch (Exception)
             {
@@ -31,11 +31,11 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<WardInfoViewModel>> GetById(int id)
+        public async Task<ActionResult<BedInfoViewModel>> GetById(int id)
         {
             try
             {
-                var result = await _iWordsInfoRepository.GetById(id);
+                var result = await _iBedInfoRepository.GetById(id);
                 if (result == null)
                 {
                     return NotFound();
@@ -48,7 +48,7 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpPost]
-        public async Task<ActionResult<WardInfoViewModel>> Insert(WardInfoViewModel obj)
+        public async Task<ActionResult<BedInfoViewModel>> Insert(BedInfoViewModel obj)
         {
             try
             {
@@ -56,14 +56,14 @@ namespace HospitalManagementApi.Controllers
                 {
                     return BadRequest();
                 }
-                var word = await _iWordsInfoRepository.GetById(obj.WardNo);
-                if (word != null)
+                var bed = await _iBedInfoRepository.GetById(obj.BedId);
+                if (bed != null)
                 {
-                    ModelState.AddModelError("", "Word is already Add");
+                    ModelState.AddModelError("", "Bed is already Add");
                     return BadRequest(ModelState);
                 }
-                var returnObj = await _iWordsInfoRepository.Insert(obj);
-                return CreatedAtAction(nameof(GetAll), new { id = returnObj.WardNo }, returnObj);
+                var returnObj = await _iBedInfoRepository.Insert(obj);
+                return CreatedAtAction(nameof(GetAll), new { id = returnObj.BedId }, returnObj);
             }
             catch (Exception)
             {
@@ -71,20 +71,20 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpPut("{id:int}")]
-        public async Task<ActionResult<WardInfoViewModel>> Update(int id, WardInfoViewModel obj)
+        public async Task<ActionResult<BedInfoViewModel>> Update(int id, BedInfoViewModel obj)
         {
             try
             {
-                if (id != obj.WardNo)
+                if (id != obj.BedId)
                 {
-                    return BadRequest("Word Id mismatch");
+                    return BadRequest("Bed Id mismatch");
                 }
-                var word = await _iWordsInfoRepository.GetById(id);
-                if (word == null)
+                var bed = await _iBedInfoRepository.GetById(id);
+                if (bed == null)
                 {
                     return NotFound();
                 }
-                return await _iWordsInfoRepository.Update(obj);
+                return await _iBedInfoRepository.Update(obj);
             }
             catch (Exception)
             {
@@ -96,12 +96,12 @@ namespace HospitalManagementApi.Controllers
         {
             try
             {
-                var word = await _iWordsInfoRepository.GetById(id);
-                if (word == null)
+                var bed = await _iBedInfoRepository.GetById(id);
+                if (bed == null)
                 {
                     return NotFound();
                 }
-                await _iWordsInfoRepository.Delete(id);
+                await _iBedInfoRepository.Delete(id);
                 return Ok();
             }
             catch (Exception)

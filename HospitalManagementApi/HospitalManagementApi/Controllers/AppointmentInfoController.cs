@@ -11,19 +11,19 @@ namespace HospitalManagementApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class WordInfoController : ControllerBase
+    public class AppointmentInfoController : ControllerBase
     {
-        private readonly IWardInfoRepsoitory _iWordsInfoRepository;
-        public WordInfoController(IWardInfoRepsoitory iWordsInfoRepository)
+        private readonly IAppointmentInfoRepository _iAppointmentInfoRepository;
+        public AppointmentInfoController(IAppointmentInfoRepository IAppointmentInfoRepository)
         {
-            _iWordsInfoRepository = iWordsInfoRepository;
+            _iAppointmentInfoRepository = IAppointmentInfoRepository;
         }
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
             try
             {
-                return Ok(await _iWordsInfoRepository.GetAll());
+                return Ok(await _iAppointmentInfoRepository.GetAll());
             }
             catch (Exception)
             {
@@ -31,11 +31,11 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<WardInfoViewModel>> GetById(int id)
+        public async Task<ActionResult<AppointmentInfoViewModel>> GetById(int id)
         {
             try
             {
-                var result = await _iWordsInfoRepository.GetById(id);
+                var result = await _iAppointmentInfoRepository.GetById(id);
                 if (result == null)
                 {
                     return NotFound();
@@ -48,7 +48,7 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpPost]
-        public async Task<ActionResult<WardInfoViewModel>> Insert(WardInfoViewModel obj)
+        public async Task<ActionResult<AppointmentInfoViewModel>> Insert(AppointmentInfoViewModel obj)
         {
             try
             {
@@ -56,14 +56,14 @@ namespace HospitalManagementApi.Controllers
                 {
                     return BadRequest();
                 }
-                var word = await _iWordsInfoRepository.GetById(obj.WardNo);
-                if (word != null)
+                var appointment = await _iAppointmentInfoRepository.GetById(obj.AppointmentId);
+                if (appointment != null)
                 {
-                    ModelState.AddModelError("", "Word is already Add");
+                    ModelState.AddModelError("", "Appointment is already Add");
                     return BadRequest(ModelState);
                 }
-                var returnObj = await _iWordsInfoRepository.Insert(obj);
-                return CreatedAtAction(nameof(GetAll), new { id = returnObj.WardNo }, returnObj);
+                var returnObj = await _iAppointmentInfoRepository.Insert(obj);
+                return CreatedAtAction(nameof(GetAll), new { id = returnObj.AppointmentId }, returnObj);
             }
             catch (Exception)
             {
@@ -71,20 +71,20 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpPut("{id:int}")]
-        public async Task<ActionResult<WardInfoViewModel>> Update(int id, WardInfoViewModel obj)
+        public async Task<ActionResult<AppointmentInfoViewModel>> Update(int id, AppointmentInfoViewModel obj)
         {
             try
             {
-                if (id != obj.WardNo)
+                if (id != obj.AppointmentId)
                 {
-                    return BadRequest("Word Id mismatch");
+                    return BadRequest("Appointment Id mismatch");
                 }
-                var word = await _iWordsInfoRepository.GetById(id);
-                if (word == null)
+                var appointment = await _iAppointmentInfoRepository.GetById(id);
+                if (appointment == null)
                 {
                     return NotFound();
                 }
-                return await _iWordsInfoRepository.Update(obj);
+                return await _iAppointmentInfoRepository.Update(obj);
             }
             catch (Exception)
             {
@@ -96,12 +96,12 @@ namespace HospitalManagementApi.Controllers
         {
             try
             {
-                var word = await _iWordsInfoRepository.GetById(id);
-                if (word == null)
+                var appointment = await _iAppointmentInfoRepository.GetById(id);
+                if (appointment == null)
                 {
                     return NotFound();
                 }
-                await _iWordsInfoRepository.Delete(id);
+                await _iAppointmentInfoRepository.Delete(id);
                 return Ok();
             }
             catch (Exception)
@@ -111,3 +111,4 @@ namespace HospitalManagementApi.Controllers
         }
     }
 }
+

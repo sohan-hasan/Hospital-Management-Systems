@@ -11,19 +11,19 @@ namespace HospitalManagementApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class WordInfoController : ControllerBase
+    public class OutDoorConsultancyController : ControllerBase
     {
-        private readonly IWardInfoRepsoitory _iWordsInfoRepository;
-        public WordInfoController(IWardInfoRepsoitory iWordsInfoRepository)
+        private readonly IOutDoorConsultancyRepository _iOutDoorConsultancy;
+        public OutDoorConsultancyController(IOutDoorConsultancyRepository iOutDoorConsultancy)
         {
-            _iWordsInfoRepository = iWordsInfoRepository;
+            this._iOutDoorConsultancy = iOutDoorConsultancy;
         }
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
             try
             {
-                return Ok(await _iWordsInfoRepository.GetAll());
+                return Ok(await _iOutDoorConsultancy.GetAll());
             }
             catch (Exception)
             {
@@ -31,11 +31,11 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<WardInfoViewModel>> GetById(int id)
+        public async Task<ActionResult<OutDoorConsultancyViewModel>> GetById(int id)
         {
             try
             {
-                var result = await _iWordsInfoRepository.GetById(id);
+                var result = await _iOutDoorConsultancy.GetById(id);
                 if (result == null)
                 {
                     return NotFound();
@@ -48,7 +48,7 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpPost]
-        public async Task<ActionResult<WardInfoViewModel>> Insert(WardInfoViewModel obj)
+        public async Task<ActionResult<OutDoorConsultancyViewModel>> Insert(OutDoorConsultancyViewModel obj)
         {
             try
             {
@@ -56,14 +56,14 @@ namespace HospitalManagementApi.Controllers
                 {
                     return BadRequest();
                 }
-                var word = await _iWordsInfoRepository.GetById(obj.WardNo);
-                if (word != null)
+                var doctor = await _iOutDoorConsultancy.GetById(obj.OutDoorId);
+                if (doctor != null)
                 {
-                    ModelState.AddModelError("", "Word is already Add");
+                    ModelState.AddModelError("", "Doctor is already Add");
                     return BadRequest(ModelState);
                 }
-                var returnObj = await _iWordsInfoRepository.Insert(obj);
-                return CreatedAtAction(nameof(GetAll), new { id = returnObj.WardNo }, returnObj);
+                var returnObj = await _iOutDoorConsultancy.Insert(obj);
+                return CreatedAtAction(nameof(GetAll), new { id = returnObj }, returnObj);
             }
             catch (Exception)
             {
@@ -71,20 +71,20 @@ namespace HospitalManagementApi.Controllers
             }
         }
         [HttpPut("{id:int}")]
-        public async Task<ActionResult<WardInfoViewModel>> Update(int id, WardInfoViewModel obj)
+        public async Task<ActionResult<OutDoorConsultancyViewModel>> Update(int id, OutDoorConsultancyViewModel obj)
         {
             try
             {
-                if (id != obj.WardNo)
+                if (id != obj.OutDoorId)
                 {
-                    return BadRequest("Word Id mismatch");
+                    return BadRequest("Doctor Id mismatch");
                 }
-                var word = await _iWordsInfoRepository.GetById(id);
-                if (word == null)
+                var consultancy = await _iOutDoorConsultancy.GetById(id);
+                if (consultancy == null)
                 {
                     return NotFound();
                 }
-                return await _iWordsInfoRepository.Update(obj);
+                return await _iOutDoorConsultancy.Update(obj);
             }
             catch (Exception)
             {
@@ -96,12 +96,12 @@ namespace HospitalManagementApi.Controllers
         {
             try
             {
-                var word = await _iWordsInfoRepository.GetById(id);
-                if (word == null)
+                var consultancy = await _iOutDoorConsultancy.GetById(id);
+                if (consultancy == null)
                 {
                     return NotFound();
                 }
-                await _iWordsInfoRepository.Delete(id);
+                await _iOutDoorConsultancy.Delete(id);
                 return Ok();
             }
             catch (Exception)
