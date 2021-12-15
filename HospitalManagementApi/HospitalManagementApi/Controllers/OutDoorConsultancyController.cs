@@ -56,10 +56,10 @@ namespace HospitalManagementApi.Controllers
                 {
                     return BadRequest();
                 }
-                var doctor = await _iOutDoorConsultancy.GetById(obj.OutDoorId);
-                if (doctor != null)
+                var consultancy = await _iOutDoorConsultancy.GetById(obj.OutDoorId);
+                if (consultancy != null)
                 {
-                    ModelState.AddModelError("", "Doctor is already Add");
+                    ModelState.AddModelError("", "OutDoorConsultancy is already Add");
                     return BadRequest(ModelState);
                 }
                 var returnObj = await _iOutDoorConsultancy.Insert(obj);
@@ -77,7 +77,7 @@ namespace HospitalManagementApi.Controllers
             {
                 if (id != obj.OutDoorId)
                 {
-                    return BadRequest("Doctor Id mismatch");
+                    return BadRequest("OutDoorConsultancy Id mismatch");
                 }
                 var consultancy = await _iOutDoorConsultancy.GetById(id);
                 if (consultancy == null)
