@@ -136,4 +136,21 @@ namespace HospitalManagementApi.ViewModels
         [Required, MaxLength(500)]
         public string Testifications { get; set; }
     }
+    public class LabandTestEntryInfoViewModel
+    {
+        [Key]
+        public int LabandTestId { get; set; }
+        [Required]
+        public int InvoiceId { get; set; }
+        [Required]
+        public int TestId { get; set; }
+
+        public DateTime ReceiveDate { get; set; }
+
+        public DateTime DeliveryDate { get; set; }
+        [Required]
+        public int Sample { get; set; }//for checkBox
+        [Required, MaxLength(200)]
+        public string Remarks { get; set; }
+    }
 }

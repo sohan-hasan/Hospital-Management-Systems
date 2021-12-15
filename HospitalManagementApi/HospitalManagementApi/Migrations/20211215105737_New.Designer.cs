@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HospitalManagementApi.Migrations
 {
     [DbContext(typeof(HospitalManagementSystemContext))]
-    [Migration("20211210203808_start-again")]
-    partial class startagain
+    [Migration("20211215105737_New")]
+    partial class New
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -184,6 +184,113 @@ namespace HospitalManagementApi.Migrations
                     b.ToTable("DoctorsInfos");
                 });
 
+            modelBuilder.Entity("HospitalManagementApi.Models.InvoiceInfo", b =>
+                {
+                    b.Property<int>("InvoiceId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<decimal>("CommissionAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("CommissionApplication")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("CommissionPercentage")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("Discount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("DiscountDue")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("DiscountPercentage")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("DueAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("DuePaid")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("DuePaidDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("InvoiceDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("NetAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("PaidAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("PaitentTotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("PatientId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReferenceId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Remarks")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("ReportDeliveryChechBox")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("VatParcentage")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("InvoiceId");
+
+                    b.ToTable("InvoiceInfo");
+                });
+
+            modelBuilder.Entity("HospitalManagementApi.Models.LabandTestEntryInfo", b =>
+                {
+                    b.Property<int>("LabandTestId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("DeliveryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("InvoiceId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("ReceiveDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Remarks")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int>("Sample")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TestId")
+                        .HasColumnType("int");
+
+                    b.HasKey("LabandTestId");
+
+                    b.HasIndex("InvoiceId");
+
+                    b.HasIndex("TestId");
+
+                    b.ToTable("LabandTestEntryInfos");
+                });
+
             modelBuilder.Entity("HospitalManagementApi.Models.OutDoorConsultancy", b =>
                 {
                     b.Property<int>("OutDoorId")
@@ -316,6 +423,25 @@ namespace HospitalManagementApi.Migrations
                         .IsRequired();
 
                     b.Navigation("WardInfo");
+                });
+
+            modelBuilder.Entity("HospitalManagementApi.Models.LabandTestEntryInfo", b =>
+                {
+                    b.HasOne("HospitalManagementApi.Models.InvoiceInfo", "InvoiceInfo")
+                        .WithMany()
+                        .HasForeignKey("InvoiceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HospitalManagementApi.Models.TestInfo", "TestInfo")
+                        .WithMany()
+                        .HasForeignKey("TestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("InvoiceInfo");
+
+                    b.Navigation("TestInfo");
                 });
 
             modelBuilder.Entity("HospitalManagementApi.Models.OutDoorConsultancy", b =>

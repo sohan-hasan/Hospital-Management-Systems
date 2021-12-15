@@ -100,6 +100,7 @@ namespace HospitalManagementApi.Models
         public string Unit { get; set; }
         [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal CashToDoctor { get; set; }
+        private ICollection<LabandTestEntryInfo> LabandTestEntryInfos { get; set; }
 
     }
     //public class TestType
@@ -334,10 +335,13 @@ namespace HospitalManagementApi.Models
         public decimal DiscountPercentage { get; set; }
         [Required]
         public decimal DiscountDue { get; set; }
+        private ICollection<LabandTestEntryInfo> LabandTestEntryInfos { get; set; }
 
     }
     public class LabandTestEntryInfo
     {
+        [Key]
+        public int LabandTestId { get; set; }
         [Required]
         public int InvoiceId { get; set; }
         [Required]
@@ -350,6 +354,10 @@ namespace HospitalManagementApi.Models
         public int Sample { get; set; }//for checkBox
         [Required, MaxLength(200)]
         public string Remarks { get; set; }
+        [ForeignKey("InvoiceId")]
+        public virtual InvoiceInfo InvoiceInfo { get; set; }
+        [ForeignKey("TestId")]
+        public virtual TestInfo TestInfo { get; set; }
     }
     public class TestReportInfo
     {
