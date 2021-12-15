@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace HospitalManagementApi.Migrations
 {
-    public partial class startagain : Migration
+    public partial class New : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -71,6 +71,37 @@ namespace HospitalManagementApi.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "InvoiceInfo",
+                columns: table => new
+                {
+                    InvoiceId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    InvoiceDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    PatientId = table.Column<int>(type: "int", nullable: false),
+                    PaitentTotalAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    VatParcentage = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Discount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    NetAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Remarks = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    PaidAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    DueAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    DuePaid = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    DuePaidDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DoctorId = table.Column<int>(type: "int", nullable: false),
+                    ReferenceId = table.Column<int>(type: "int", nullable: false),
+                    ReportDeliveryChechBox = table.Column<int>(type: "int", nullable: false),
+                    CommissionApplication = table.Column<int>(type: "int", nullable: false),
+                    CommissionPercentage = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    CommissionAmount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    DiscountPercentage = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    DiscountDue = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_InvoiceInfo", x => x.InvoiceId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "TestInfos",
                 columns: table => new
                 {
@@ -134,6 +165,36 @@ namespace HospitalManagementApi.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "LabandTestEntryInfos",
+                columns: table => new
+                {
+                    LabandTestId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    InvoiceId = table.Column<int>(type: "int", nullable: false),
+                    TestId = table.Column<int>(type: "int", nullable: false),
+                    ReceiveDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DeliveryDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Sample = table.Column<int>(type: "int", nullable: false),
+                    Remarks = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_LabandTestEntryInfos", x => x.LabandTestId);
+                    table.ForeignKey(
+                        name: "FK_LabandTestEntryInfos_InvoiceInfo_InvoiceId",
+                        column: x => x.InvoiceId,
+                        principalTable: "InvoiceInfo",
+                        principalColumn: "InvoiceId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_LabandTestEntryInfos_TestInfos_TestId",
+                        column: x => x.TestId,
+                        principalTable: "TestInfos",
+                        principalColumn: "TestId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "BedInfos",
                 columns: table => new
                 {
@@ -159,6 +220,16 @@ namespace HospitalManagementApi.Migrations
                 column: "WardNo");
 
             migrationBuilder.CreateIndex(
+                name: "IX_LabandTestEntryInfos_InvoiceId",
+                table: "LabandTestEntryInfos",
+                column: "InvoiceId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_LabandTestEntryInfos_TestId",
+                table: "LabandTestEntryInfos",
+                column: "TestId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_OutDoorConsultancies_DoctorId",
                 table: "OutDoorConsultancies",
                 column: "DoctorId");
@@ -176,13 +247,19 @@ namespace HospitalManagementApi.Migrations
                 name: "CabinInfos");
 
             migrationBuilder.DropTable(
+                name: "LabandTestEntryInfos");
+
+            migrationBuilder.DropTable(
                 name: "OutDoorConsultancies");
 
             migrationBuilder.DropTable(
-                name: "TestInfos");
+                name: "WardInfos");
 
             migrationBuilder.DropTable(
-                name: "WardInfos");
+                name: "InvoiceInfo");
+
+            migrationBuilder.DropTable(
+                name: "TestInfos");
 
             migrationBuilder.DropTable(
                 name: "DoctorsInfos");

@@ -732,4 +732,98 @@ namespace HospitalManagementApi.DAL.Repositories
         }
 
     }
+    public class LabandTestEntryInfoRepository : ILabandTestEntry
+        {
+            private readonly HospitalManagementSystemContext _context;
+            public LabandTestEntryInfoRepository(HospitalManagementSystemContext contex)
+            {
+                _context = contex;
+            }       
+            
+            public async Task<IEnumerable<LabandTestEntryInfoViewModel>> GetAll()
+            {
+                IEnumerable<LabandTestEntryInfoViewModel> listOfLabTest = await _context.LabandTestEntryInfos.Select(e => new LabandTestEntryInfoViewModel
+                {
+                    InvoiceId = e.InvoiceId,
+                    TestId = e.TestId,
+                    ReceiveDate = e.ReceiveDate,
+                    DeliveryDate = e.DeliveryDate,
+                    Sample = e.Sample,
+                    Remarks = e.Remarks,               
+                }).ToListAsync();
+                return listOfLabTest;
+            }
+
+            public async Task<LabandTestEntryInfoViewModel> GetById(int id)
+            {
+                LabandTestEntryInfo e = await _context.LabandTestEntryInfos.AsNoTracking().FirstOrDefaultAsync(e => e.LabandTestId == id);
+                if (e != null)
+                {
+                    LabandTestEntryInfoViewModel word = new LabandTestEntryInfoViewModel
+                    {
+                        InvoiceId = e.InvoiceId,
+                        TestId = e.TestId,
+                        ReceiveDate = e.ReceiveDate,
+                        DeliveryDate = e.DeliveryDate,
+                        Sample = e.Sample,
+                        Remarks = e.Remarks,
+                    };
+                    return word;
+                }
+                return null;
+            }
+
+            public async Task<LabandTestEntryInfoViewModel> Insert(LabandTestEntryInfoViewModel e)
+            {
+                LabandTestEntryInfoViewModel returnObj = new LabandTestEntryInfoViewModel();
+                if (e != null)
+                {
+                    LabandTestEntryInfo obj = new LabandTestEntryInfo()
+                    {
+                        InvoiceId = e.InvoiceId,
+                        TestId = e.TestId,
+                        ReceiveDate = e.ReceiveDate,
+                        DeliveryDate = e.DeliveryDate,
+                        Sample = e.Sample,
+                        Remarks = e.Remarks,
+                    };
+                    await _context.LabandTestEntryInfos.AddAsync(obj);
+                    await Save();
+                    returnObj = await GetById(obj.TestId);
+
+                }
+                return returnObj;
+            }
+            public async Task<LabandTestEntryInfoViewModel> Update(LabandTestEntryInfoViewModel e)
+            {
+                var result = await _context.LabandTestEntryInfos.FirstOrDefaultAsync(h => h.LabandTestId == e.LabandTestId);
+                LabandTestEntryInfoViewModel returnObj = new LabandTestEntryInfoViewModel();
+                if (result != null)
+                {
+                    result.InvoiceId = e.InvoiceId;
+                    result.TestId = e.TestId;
+                    result.ReceiveDate = e.ReceiveDate;
+                    result.DeliveryDate = e.DeliveryDate;
+                    result.Sample = e.Sample;
+                    result.Remarks = e.Remarks;
+                }
+                await Save();
+                returnObj = await GetById(result.TestId);
+                return returnObj;
+            }
+            public async Task Save()
+            {
+                await _context.SaveChangesAsync();
+            }
+            public async Task Delete(int id)
+            {
+                var result = await _context.LabandTestEntryInfos.FirstOrDefaultAsync(p => p.TestId == id);
+                if (result != null)
+                {
+                    _context.LabandTestEntryInfos.Remove(result);
+                    await _context.SaveChangesAsync();
+                }
+            }
+
+        }
 }

@@ -20,6 +20,7 @@ namespace HospitalManagementApi
 {
     public class Startup
     {
+        private readonly string _localOrigin = "_localOrigin";
         private readonly IConfiguration iConfiguration;
         public Startup(IConfiguration _iConfiguration)
         {
@@ -45,15 +46,24 @@ namespace HospitalManagementApi
             services.AddScoped<IAppointmentInfoRepository, AppointmentInfoRepository>();
             services.AddScoped<ITestInfoRepository, TestInfoRepository>();
             services.AddScoped<IOutDoorConsultancyRepository, OutDoorConsultancyRepository>();
-            
+            services.AddScoped<ILabandTestEntry, LabandTestEntryInfoRepository>();
 
-            services.AddCors();
+
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy(_localOrigin, builder =>
+                {
+                    builder.AllowAnyOrigin();
+                    builder.AllowAnyHeader();
+                    builder.AllowAnyMethod();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseCors(options => options.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader());
+           
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -62,7 +72,7 @@ namespace HospitalManagementApi
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors(_localOrigin);
             app.UseRouting();
 
             app.UseAuthorization();

@@ -71,4 +71,13 @@ namespace HospitalManagementApi.DAL.IRepository
         Task Delete(int id);
         Task Save();
     }
+    public interface ILabandTestEntry
+    {
+        Task<IEnumerable<LabandTestEntryInfoViewModel>> GetAll();
+        Task<LabandTestEntryInfoViewModel> GetById(int id);
+        Task<LabandTestEntryInfoViewModel> Insert(LabandTestEntryInfoViewModel e);
+        Task<LabandTestEntryInfoViewModel> Update(LabandTestEntryInfoViewModel e);
+        Task Delete(int id);
+        Task Save();
+    }
 }

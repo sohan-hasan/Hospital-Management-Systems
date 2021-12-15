@@ -24,6 +24,7 @@ namespace HospitalManagementApi.ViewModels
         public virtual DbSet<TestInfo> TestInfos { get; set; }
         public virtual DbSet<AppointmentInfo> AppoinmentInfos { get; set; }
         public virtual DbSet<OutDoorConsultancy> OutDoorConsultancies { get; set; }
+        public virtual DbSet<LabandTestEntryInfo> LabandTestEntryInfos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
