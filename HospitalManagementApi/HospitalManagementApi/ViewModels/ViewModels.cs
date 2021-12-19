@@ -35,11 +35,7 @@ namespace HospitalManagementApi.ViewModels
         public IFormFile Photo { get; set; }
     }
 
-<<<<<<< HEAD
-    public class WordInfoViewModel
-=======
     public class WardInfoViewModel
->>>>>>> d553aee8a1ed7a4df11e28f99813e6f6e67aeb79
     {
         [Key]
         public int WardNo { get; set; }
@@ -62,11 +58,7 @@ namespace HospitalManagementApi.ViewModels
         [Required]
         public string BedNo { get; set; }
         [Required]
-<<<<<<< HEAD
-        public int WordNo { get; set; }
-=======
         public int WardNo { get; set; }
->>>>>>> d553aee8a1ed7a4df11e28f99813e6f6e67aeb79
     }
     public class CabinInfoViewModel
     {
@@ -89,8 +81,6 @@ namespace HospitalManagementApi.ViewModels
 
         public string ImageName { get; set; }
 
-<<<<<<< HEAD
-=======
     }
     public class TestInfoViewModel
     {
@@ -165,6 +155,5 @@ namespace HospitalManagementApi.ViewModels
         public int Sample { get; set; }//for checkBox
         [Required, MaxLength(200)]
         public string Remarks { get; set; }
->>>>>>> d553aee8a1ed7a4df11e28f99813e6f6e67aeb79
     }
 }
