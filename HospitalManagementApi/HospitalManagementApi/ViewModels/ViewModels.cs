@@ -31,7 +31,7 @@ namespace HospitalManagementApi.ViewModels
         public int CommissionStatus { get; set; }
         public string ImageName { get; set; }
     }
-<<<<<<< HEAD
+
     public class WordInfoViewModel
     {
         [Key]
@@ -56,7 +56,7 @@ namespace HospitalManagementApi.ViewModels
         public string BedNo { get; set; }
         [Required]
         public int WordNo { get; set; }
-=======
+    }
     public class CabinInfoViewModel
     {
         [Key]
@@ -77,6 +77,6 @@ namespace HospitalManagementApi.ViewModels
         public string CabinDirection { get; set; }
 
         public string ImageName { get; set; }
->>>>>>> 636893cce02ed540b9316fa1ea83496a3a5b5b16
+
     }
 }
