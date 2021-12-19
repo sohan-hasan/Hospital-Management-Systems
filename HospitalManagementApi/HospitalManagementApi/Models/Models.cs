@@ -287,7 +287,7 @@ namespace HospitalManagementApi.Models
         public int Quantity { get; set; }
         [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal UnitPrice { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal Total { get; set; }
 
         public DateTime VoucherDate { get; set; }
@@ -309,7 +309,7 @@ namespace HospitalManagementApi.Models
         public string Remarks { get; set; }
         [Required]
         public int Quantity { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal UnitPrice { get; set; }
         public DateTime VoucherDate { get; set; }
         [ForeignKey("PatientAddmissionId")]
@@ -326,21 +326,21 @@ namespace HospitalManagementApi.Models
         public DateTime InvoiceDate { get; set; }
         [Required]
         public int PatientId { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal PaitentTotalAmount { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal VatParcentage { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal Discount { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal NetAmount { get; set; }
         [Required, MaxLength(50)]
         public string Remarks { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal PaidAmount { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal DueAmount { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal DuePaid { get; set; }
         [Required]
         public DateTime DuePaidDate { get; set; }
@@ -352,13 +352,13 @@ namespace HospitalManagementApi.Models
         public int ReportDeliveryChechBox { get; set; }
         [Required]
         public int CommissionApplication { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal CommissionPercentage { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal CommissionAmount { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal DiscountPercentage { get; set; }
-        [Required]
+        [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal DiscountDue { get; set; }
         [ForeignKey("PatientId")]
         public virtual PatientInfo PatientInfo { get; set; }
