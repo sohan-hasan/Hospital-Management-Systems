@@ -132,7 +132,11 @@ namespace HospitalManagementApi.DAL.Repositories
       
     }
 
+<<<<<<< HEAD
+    public class WordInfoRepository : IWordInfoRepsoitory
+=======
     public class WardInfoRepository : IWardInfoRepsoitory
+>>>>>>> d553aee8a1ed7a4df11e28f99813e6f6e67aeb79
     {
         private readonly HospitalManagementSystemContext _context;
         public WardInfoRepository(HospitalManagementSystemContext contex)
@@ -144,9 +148,15 @@ namespace HospitalManagementApi.DAL.Repositories
         {
             IEnumerable<WardInfoViewModel> listOfWards = await _context.WardInfos.Select(e => new WardInfoViewModel
             {
+<<<<<<< HEAD
+                WordNo = e.WordNo,
+                WordName = e.WordName,
+                WordCost = e.WordCost,
+=======
                 WardNo = e.WardNo,
                 WardName = e.WardName,
                 WardCost = e.WardCost,
+>>>>>>> d553aee8a1ed7a4df11e28f99813e6f6e67aeb79
                 BookingStatus = e.BookingStatus,
                 FloorNo = e.FloorNo,
                 ImageName = e.ImageName
@@ -168,6 +178,34 @@ namespace HospitalManagementApi.DAL.Repositories
                     FloorNo = e.FloorNo,
                     ImageName = e.ImageName
                 };
+<<<<<<< HEAD
+                return word;
+            }
+            return null;
+        }
+        public async Task<WordInfoViewModel> Insert(WordInfoViewModel e)
+        {
+            WordInfoViewModel returnObj = new WordInfoViewModel();
+            if (e != null)
+            {
+                WordInfo obj = new WordInfo()
+                {
+                    WordNo = e.WordNo,
+                    WordName = e.WordName,
+                    WordCost = e.WordCost,
+                    BookingStatus = e.BookingStatus,
+                    FloorNo = e.FloorNo,
+                    ImageName = e.ImageName
+                };
+                await _context.WordInfos.AddAsync(obj);
+                await Save();
+                returnObj = await GetById(obj.WordNo);
+
+            }
+            return returnObj;
+        }
+        public async Task<WordInfoViewModel> Update(WordInfoViewModel e)
+=======
                 return Ward;
             }
             return null;
@@ -297,6 +335,7 @@ namespace HospitalManagementApi.DAL.Repositories
             return returnObj;
         }
         public async Task<CabinInfoViewModel> Update(CabinInfoViewModel e)
+>>>>>>> d553aee8a1ed7a4df11e28f99813e6f6e67aeb79
         {
             var result = await _context.CabinInfos.FirstOrDefaultAsync(h => h.CabinId == e.CabinId);
             CabinInfoViewModel returnObj = new CabinInfoViewModel();
@@ -419,6 +458,118 @@ namespace HospitalManagementApi.DAL.Repositories
                 await _context.SaveChangesAsync();
             }
         }
+<<<<<<< HEAD
+    }
+    //public class CabinInfoRepository : ICabinInfoRepository
+    //{
+    //    private readonly HospitalManagementSystemContext _context;
+    //    public CabinInfoRepository(HospitalManagementSystemContext contex)
+    //    {
+    //        _context = contex;
+    //    }
+    //    public async Task<IEnumerable<CabinInfoViewModel>> GetAll()
+    //    {
+    //        IEnumerable<CabinInfoViewModel> listOfCabin = await _context.CabinInfos.Select(e => new CabinInfoViewModel
+    //        {
+    //            CabinId = e.CabinId,
+    //            CabinName = e.CabinName,
+    //            CabinType = e.CabinType,
+    //            CabinSize = e.CabinSize,
+    //            FloorNo = e.FloorNo,
+    //            CostPerDay = e.CostPerDay,
+    //            BookingStatus = e.BookingStatus,
+    //            CabinDirection = e.CabinDirection,
+    //            ImageName = e.ImageName
+    //        }).ToListAsync();
+    //        return listOfCabin;
+    //    }
+
+    //    public async Task<CabinInfoViewModel> GetById(int id)
+    //    {
+    //        CabinInfo e = await _context.CabinInfos.AsNoTracking().FirstOrDefaultAsync(e => e.CabinId == id);
+    //        if (e != null)
+    //        {
+    //            CabinInfoViewModel cabin = new CabinInfoViewModel
+    //            {
+    //                CabinId = e.CabinId,
+    //                CabinName = e.CabinName,
+    //                CabinType = e.CabinType,
+    //                CabinSize = e.CabinSize,
+    //                FloorNo = e.FloorNo,
+    //                CostPerDay = e.CostPerDay,
+    //                BookingStatus = e.BookingStatus,
+    //                CabinDirection = e.CabinDirection,
+    //                ImageName = e.ImageName
+    //            };
+    //            return cabin;
+
+    //        }
+    //        return null;
+    //    }
+
+    //    public async Task<CabinInfoViewModel> Insert(CabinInfoViewModel e)
+    //    {
+    //        CabinInfoViewModel returnObj = new CabinInfoViewModel();
+    //        if (e != null)
+    //        {
+    //            CabinInfo obj = new CabinInfo()
+    //            {
+
+    //                CabinId = e.CabinId,
+    //                CabinName = e.CabinName,
+    //                CabinType = e.CabinType,
+    //                CabinSize = e.CabinSize,
+    //                FloorNo = e.FloorNo,
+    //                CostPerDay = e.CostPerDay,
+    //                BookingStatus = e.BookingStatus,
+    //                CabinDirection = e.CabinDirection,
+    //                ImageName = e.ImageName,
+    //            };
+    //            await _context.CabinInfos.AddAsync(obj);
+    //            await Save();
+    //            returnObj = await GetById(obj.CabinId);
+
+    //        }
+    //        return returnObj;
+    //    }
+    //    public async Task<CabinInfoViewModel> Update(CabinInfoViewModel e)
+    //    {
+    //        var result = await _context.CabinInfos.FirstOrDefaultAsync(h => h.CabinId == e.CabinId);
+    //        CabinInfoViewModel returnObj = new CabinInfoViewModel();
+    //        if (result != null)
+    //        {
+    //            result.CabinId = e.CabinId;
+    //            result.CabinName = e.CabinName;
+    //            result.CabinType = e.CabinType;
+    //            result.CabinSize = e.CabinSize;
+    //            result.FloorNo = e.FloorNo;
+    //            result.CostPerDay = e.CostPerDay;
+    //            result.BookingStatus = e.BookingStatus;
+    //            result.CabinDirection = e.CabinDirection;
+    //            result.ImageName = e.ImageName;
+    //        }
+    //        await Save();
+    //        returnObj = await GetById(result.CabinId);
+    //        return returnObj;
+    //    }
+
+    //    public async Task Delete(int id)
+    //    {
+    //        var result = await _context.CabinInfos.FirstOrDefaultAsync(p => p.CabinId == id);
+    //        if (result != null)
+    //        {
+    //            _context.CabinInfos.Remove(result);
+    //            await _context.SaveChangesAsync();
+    //        }
+    //    }
+
+    //    public async Task Save()
+    //    {
+    //        await _context.SaveChangesAsync();
+    //    }
+
+    //}
+=======
 
     }
     public class TestInfoRepository : ITestInfoRepository
@@ -828,4 +979,5 @@ namespace HospitalManagementApi.DAL.Repositories
             }
 
         }
+>>>>>>> d553aee8a1ed7a4df11e28f99813e6f6e67aeb79
 }

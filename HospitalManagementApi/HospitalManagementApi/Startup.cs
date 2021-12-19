@@ -40,6 +40,14 @@ namespace HospitalManagementApi
 
 
             services.AddScoped<IDoctorsInfoRepository, DoctorsInfoRepository>();
+<<<<<<< HEAD
+
+            services.AddScoped<IWordInfoRepsoitory, WordInfoRepository>();
+
+            //services.AddScoped<ICabinInfoRepository, CabinInfoRepository>();
+
+            services.AddCors();
+=======
             services.AddScoped<IWardInfoRepsoitory, WardInfoRepository>();
             services.AddScoped<ICabinInfoRepository, CabinInfoRepository>();
             services.AddScoped<IBedInfoRepository, BedInfoRepository>();
@@ -58,6 +66,7 @@ namespace HospitalManagementApi
                     builder.AllowAnyMethod();
                 });
             });
+>>>>>>> d553aee8a1ed7a4df11e28f99813e6f6e67aeb79
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
