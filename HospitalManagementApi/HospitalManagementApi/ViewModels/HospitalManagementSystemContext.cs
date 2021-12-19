@@ -16,11 +16,24 @@ namespace HospitalManagementApi.ViewModels
 
         public virtual DbSet<DoctorsInfo> DoctorsInfos { get; set; }
 
+<<<<<<< HEAD
         public virtual DbSet<WordInfo> WordInfos { get; set; }
 
         public virtual DbSet<CabinInfo> CabinInfos { get; set; }
         public virtual DbSet<BedInfo> BedInfos { get; set; }
         
+=======
+        public virtual DbSet<WardInfo> WardInfos { get; set; }
+
+        public virtual DbSet<CabinInfo> CabinInfos { get; set; }
+
+        public virtual DbSet<BedInfo> BedInfos { get; set; }
+        public virtual DbSet<TestInfo> TestInfos { get; set; }
+        public virtual DbSet<AppointmentInfo> AppoinmentInfos { get; set; }
+        public virtual DbSet<OutDoorConsultancy> OutDoorConsultancies { get; set; }
+        public virtual DbSet<LabandTestEntryInfo> LabandTestEntryInfos { get; set; }
+
+>>>>>>> d553aee8a1ed7a4df11e28f99813e6f6e67aeb79
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //modelBuilder.Entity<Apartment>().HasMany(e => e.ApartmentBookings).WithOne(e => e.Apartment).OnDelete(DeleteBehavior.NoAction);
