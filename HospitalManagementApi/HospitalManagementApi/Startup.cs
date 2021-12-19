@@ -1,6 +1,6 @@
 using HospitalManagementApi.DAL.IRepository;
 using HospitalManagementApi.DAL.Repositories;
-using HospitalManagementApi.ViewModels;
+using HospitalManagementApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -70,11 +70,11 @@ namespace HospitalManagementApi
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HospitalManagementApi v1"));
             }
-
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseCors(_localOrigin);
             app.UseRouting();
-
+            
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

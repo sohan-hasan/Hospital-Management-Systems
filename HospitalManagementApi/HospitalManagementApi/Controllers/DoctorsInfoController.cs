@@ -1,9 +1,12 @@
 ﻿using HospitalManagementApi.DAL.IRepository;
+using HospitalManagementApi.Models;
 using HospitalManagementApi.ViewModels;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -14,13 +17,19 @@ namespace HospitalManagementApi.Controllers
     public class DoctorsInfoController : ControllerBase
     {
         private readonly IDoctorsInfoRepository _iDoctorsInfoRepository;
-        public DoctorsInfoController(IDoctorsInfoRepository iDoctorsInfoRepository)
+        private readonly IWebHostEnvironment _iWebHostEnvironment;
+
+        public DoctorsInfoController(IDoctorsInfoRepository iDoctorsInfoRepository, IWebHostEnvironment iWebHostEnvironment)
         {
             _iDoctorsInfoRepository = iDoctorsInfoRepository;
+            _iWebHostEnvironment = iWebHostEnvironment;
+
         }
+
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
+
             try
             {
                 return Ok(await _iDoctorsInfoRepository.GetAll());
@@ -47,23 +56,35 @@ namespace HospitalManagementApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
             }
         }
-        [HttpPost]
-        public async Task<ActionResult<DoctorsInfoViewModel>> Insert(DoctorsInfoViewModel obj)
+        [HttpPost("Insert")]
+        public async Task<object> Insert([FromForm]DoctorsInfoViewModel obj)
         {
             try
             {
+                string uniqueImageName = "";
+
+                if (obj.Photo != null)
+                {
+                    string uploadFolder = Path.Combine(_iWebHostEnvironment.WebRootPath, "images/doctor_images");
+                    uniqueImageName = Guid.NewGuid().ToString() + "_" + obj.Photo.FileName;
+                    string filePath = Path.Combine(uploadFolder, uniqueImageName);
+                    FileStream fileStream = new FileStream(filePath, FileMode.Create);
+                    obj.Photo.CopyTo(fileStream);
+                    fileStream.Close();
+                    obj.ImageName = uniqueImageName;
+                }
+
                 if (obj == null)
                 {
-                    return BadRequest();
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data object Error", null));
                 }
                 var doctor = await _iDoctorsInfoRepository.GetById(obj.DoctorId);
                 if (doctor != null)
                 {
-                    ModelState.AddModelError("", "Doctor is already Add");
-                    return BadRequest(ModelState);
+                   return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data alrady Exist", null));
                 }
                 var returnObj = await _iDoctorsInfoRepository.Insert(obj);
-                return CreatedAtAction(nameof(GetAll), new { id = returnObj.DoctorId }, returnObj);
+                return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Docctor info Inserted", returnObj));
             }
             catch (Exception)
             {

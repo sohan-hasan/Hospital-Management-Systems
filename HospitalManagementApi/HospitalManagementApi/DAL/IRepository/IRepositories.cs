@@ -10,8 +10,10 @@ namespace HospitalManagementApi.DAL.IRepository
     {
         Task<IEnumerable<DoctorsInfoViewModel>> GetAll();
         Task<DoctorsInfoViewModel> GetById(int id);
+       
         Task<DoctorsInfoViewModel> Insert(DoctorsInfoViewModel e);
         Task<DoctorsInfoViewModel> Update(DoctorsInfoViewModel e);
+
         Task Delete(int id);
         Task Save();
     }

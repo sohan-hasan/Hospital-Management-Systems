@@ -16,6 +16,7 @@ namespace HospitalManagementApi.DAL.Repositories
         {
             _context = contex;
         }
+    
         public async Task<IEnumerable<DoctorsInfoViewModel>> GetAll()
         {
             IEnumerable<DoctorsInfoViewModel> listOfDoctors = await _context.DoctorsInfos.Select(e => new DoctorsInfoViewModel
@@ -128,6 +129,7 @@ namespace HospitalManagementApi.DAL.Repositories
             await _context.SaveChangesAsync();
         }
 
+      
     }
 
     public class WardInfoRepository : IWardInfoRepsoitory

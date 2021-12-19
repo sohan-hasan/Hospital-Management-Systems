@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -30,6 +31,8 @@ namespace HospitalManagementApi.ViewModels
         [Required]
         public int CommissionStatus { get; set; }
         public string ImageName { get; set; }
+
+        public IFormFile Photo { get; set; }
     }
 
     public class WardInfoViewModel

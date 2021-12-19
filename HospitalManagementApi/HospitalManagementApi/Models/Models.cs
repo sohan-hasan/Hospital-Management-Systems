@@ -32,6 +32,7 @@ namespace HospitalManagementApi.Models
         public int CommissionStatus { get; set; }
         public string ImageName { get; set; }
         public virtual ICollection<OutDoorConsultancy> OutDoorConsultancies { get; set; }
+        public virtual ICollection<AppointmentInfo> AppointmentInfos { get; set; }
     }
     public class WardInfo
     {
@@ -43,7 +44,6 @@ namespace HospitalManagementApi.Models
         public decimal WardCost { get; set; }
         [Required, MaxLength(10)]
         public string BookingStatus { get; set; }
-
         [Required, MaxLength(30)]
         public string FloorNo { get; set; }
         public string ImageName { get; set; }
@@ -100,7 +100,8 @@ namespace HospitalManagementApi.Models
         public string Unit { get; set; }
         [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal CashToDoctor { get; set; }
-        private ICollection<LabandTestEntryInfo> LabandTestEntryInfos { get; set; }
+        public ICollection<LabandTestEntryInfo> LabandTestEntryInfos { get; set; }
+        public ICollection<TestReportInfo> TestReportInfos { get; set; }
 
     }
     //public class TestType
@@ -130,6 +131,8 @@ namespace HospitalManagementApi.Models
         public DateTime NextAppointmentDate { get; set; }
         [Required, MaxLength(200)]
         public string Remark { get; set; }
+        [ForeignKey("DoctorId")]
+        public virtual DoctorsInfo DoctorsInfo { get; set; }
     }
 
     public class OutDoorConsultancy
@@ -182,6 +185,9 @@ namespace HospitalManagementApi.Models
         public string BloodGroup { get; set; }
         [Required]
         public int Age { get; set; }
+        public ICollection<PatientAdmissionInfo> PatientAdmissionInfos { get; set; }
+        public ICollection<PatientOthersInfo> PatientOthersInfos { get; set; }
+        public ICollection<InvoiceInfo> InvoiceInfos { get; set; }
 
     }
     public class PatientAdmissionInfo
@@ -234,9 +240,18 @@ namespace HospitalManagementApi.Models
         public decimal TotalPaidAmount { get; set; }
         [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal TotalDueAmount { get; set; }
+        [ForeignKey("PatientId")]
+        public virtual PatientInfo PatientInfo { get; set; }
+        [ForeignKey("DoctorId")]
+        public virtual DoctorsInfo DoctorsInfo { get; set; }
+        public ICollection<PatientMedicineInfo> PatientMedicineInfos { get; set; }
+        public ICollection<PatientTestingInfo> PatientTestingInfos { get; set; }
+        public ICollection<PatientOthersInfo> PatientOthersInfos { get; set; }
     }
     public class PatientMedicineInfo
     {
+        [Key]
+        public int PatientMedicineInfoId { get; set; }
         [Required]
         public int MedicineNo { get; set; }
         [Required, MaxLength(60)]
@@ -253,6 +268,8 @@ namespace HospitalManagementApi.Models
         public decimal UnitPrice { get; set; }
         [Required, Column(TypeName = "decimal(16, 2)")]
         public decimal Total { get; set; }
+        [ForeignKey("PatientAddmissionId")]
+        public virtual PatientAdmissionInfo PatientAdmissionInfo { get; set; }
     }
     public class PatientTestingInfo
     {
@@ -274,9 +291,13 @@ namespace HospitalManagementApi.Models
         public decimal Total { get; set; }
 
         public DateTime VoucherDate { get; set; }
+        [ForeignKey("PatientAddmissionId")]
+        public virtual PatientAdmissionInfo PatientAdmissionInfo { get; set; }
     }
     public class PatientOthersInfo
     {
+        [Key]
+        public int PatientOthersInfoId { get; set; }
         [Required]
         public int PatientAddmissionId { get; set; }
         [Required]
@@ -291,6 +312,10 @@ namespace HospitalManagementApi.Models
         [Required]
         public decimal UnitPrice { get; set; }
         public DateTime VoucherDate { get; set; }
+        [ForeignKey("PatientAddmissionId")]
+        public virtual PatientAdmissionInfo PatientAdmissionInfo { get; set; }
+        [ForeignKey("PatientId")]
+        public virtual PatientInfo PatientInfo { get; set; }
 
     }
     public class InvoiceInfo
@@ -335,8 +360,10 @@ namespace HospitalManagementApi.Models
         public decimal DiscountPercentage { get; set; }
         [Required]
         public decimal DiscountDue { get; set; }
-        private ICollection<LabandTestEntryInfo> LabandTestEntryInfos { get; set; }
-
+        [ForeignKey("PatientId")]
+        public virtual PatientInfo PatientInfo { get; set; }
+        public ICollection<LabandTestEntryInfo> LabandTestEntryInfos { get; set; }
+        public ICollection<TestReportInfo> TestReportInfos { get; set; }
     }
     public class LabandTestEntryInfo
     {
@@ -361,6 +388,8 @@ namespace HospitalManagementApi.Models
     }
     public class TestReportInfo
     {
+        [Key]
+        public int TestReportInfoId { get; set; }
         [Required]
         public int InvoiceId { get; set; }
         [Required]
@@ -371,5 +400,9 @@ namespace HospitalManagementApi.Models
         public int Result { get; set; }
         [Required, MaxLength(300)]
         public int Remarks { get; set; }
+        [ForeignKey("InvoiceId")]
+        public virtual InvoiceInfo InvoiceInfo { get; set; }
+        [ForeignKey("TestId")]
+        public virtual TestInfo TestInfo { get; set; }
     }
 }
