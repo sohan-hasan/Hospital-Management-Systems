@@ -1,0 +1,624 @@
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.Development.json
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.json
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.exe
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.deps.json
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.json
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.dev.json
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\ref\HospitalManagementApi.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.pdb
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Humanizer.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.GeneratedMSBuildEditorConfig.editorconfig
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfoInputs.cache
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfo.cs
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CoreCompileInputs.cache
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cs
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cache
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.Manifest.cache
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.xml
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\scopedcss\bundle\HospitalManagementApi.styles.css
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.RazorTargetAssemblyInfo.cache
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\ref\HospitalManagementApi.dll
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.pdb
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.genruntimeconfig.cache
+F:\HospitalMangement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.AssemblyReference.cache
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.GeneratedMSBuildEditorConfig.editorconfig
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfoInputs.cache
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfo.cs
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CoreCompileInputs.cache
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cs
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cache
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\ref\HospitalManagementApi.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.pdb
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.Development.json
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.json
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.exe
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.deps.json
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.json
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.dev.json
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\ref\HospitalManagementApi.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.pdb
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Humanizer.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.Manifest.cache
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.xml
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\scopedcss\bundle\HospitalManagementApi.styles.css
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.RazorTargetAssemblyInfo.cache
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.genruntimeconfig.cache
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.Development.json
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.json
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.exe
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.deps.json
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.json
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.dev.json
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.pdb
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Humanizer.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.AssemblyReference.cache
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfoInputs.cache
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfo.cs
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CoreCompileInputs.cache
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cs
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cache
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.Manifest.cache
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.xml
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\scopedcss\bundle\HospitalManagementApi.styles.css
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.RazorTargetAssemblyInfo.cache
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.pdb
+D:\IDB-IT\FProject\Final\New\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.genruntimeconfig.cache
+F:\HospitalMangement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.AssemblyReference.cache
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.Development.json
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.json
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.exe
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.deps.json
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.json
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.dev.json
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.pdb
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Humanizer.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.AssemblyReference.cache
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfoInputs.cache
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfo.cs
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CoreCompileInputs.cache
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cs
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cache
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.Manifest.cache
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.xml
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\scopedcss\bundle\HospitalManagementApi.styles.css
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.RazorTargetAssemblyInfo.cache
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.pdb
+D:\IDB-IT\FinalProject\HospitalManagement (2)\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.genruntimeconfig.cache
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.Development.json
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.json
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.exe
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.deps.json
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.json
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.dev.json
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.pdb
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Humanizer.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.AssemblyReference.cache
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfoInputs.cache
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfo.cs
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CoreCompileInputs.cache
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.Manifest.cache
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.xml
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\scopedcss\bundle\HospitalManagementApi.styles.css
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.RazorTargetAssemblyInfo.cache
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CopyComplete
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.pdb
+D:\Round-46\Project\Project\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.genruntimeconfig.cache
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.Development.json
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.json
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.exe
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.deps.json
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.json
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.dev.json
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.pdb
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Humanizer.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.AssemblyReference.cache
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfoInputs.cache
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfo.cs
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CoreCompileInputs.cache
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cs
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cache
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.Manifest.cache
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.xml
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\scopedcss\bundle\HospitalManagementApi.styles.css
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.RazorTargetAssemblyInfo.cache
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.pdb
+D:\IDB-IT\FinalProject\HospitalManagement\HospitalManagement\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.genruntimeconfig.cache
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.Development.json
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.json
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.exe
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.deps.json
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.json
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.dev.json
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.pdb
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Humanizer.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.AssemblyReference.cache
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfoInputs.cache
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfo.cs
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CoreCompileInputs.cache
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.Manifest.cache
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.xml
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\scopedcss\bundle\HospitalManagementApi.styles.css
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.RazorTargetAssemblyInfo.cache
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CopyComplete
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.pdb
+D:\Round-46\Project\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.genruntimeconfig.cache
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.Development.json
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.json
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.exe
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.deps.json
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.json
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.dev.json
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.pdb
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Humanizer.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.AssemblyReference.cache
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfoInputs.cache
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfo.cs
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CoreCompileInputs.cache
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cs
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cache
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.Manifest.cache
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.xml
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\scopedcss\bundle\HospitalManagementApi.styles.css
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.RazorTargetAssemblyInfo.cache
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CopyComplete
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\ref\HospitalManagementApi.dll
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.pdb
+D:\IDB_Course\Core_Course\Project\Final Project\HospitalManagementApi\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.genruntimeconfig.cache
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.Development.json
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\appsettings.json
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.exe
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.deps.json
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.json
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.runtimeconfig.dev.json
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\ref\HospitalManagementApi.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\HospitalManagementApi.pdb
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Humanizer.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.AssemblyReference.cache
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.GeneratedMSBuildEditorConfig.editorconfig
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfoInputs.cache
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.AssemblyInfo.cs
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.csproj.CoreCompileInputs.cache
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cs
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.MvcApplicationPartsAssemblyInfo.cache
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.Manifest.cache
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\staticwebassets\HospitalManagementApi.StaticWebAssets.xml
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\scopedcss\bundle\HospitalManagementApi.styles.css
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.RazorTargetAssemblyInfo.cache
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\ref\HospitalManagementApi.dll
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.pdb
+F:\Repository\Hospital-Management-Systems\HospitalManagementApi\HospitalManagementApi\obj\Debug\net5.0\HospitalManagementApi.genruntimeconfig.cache

@@ -1,5 +1,6 @@
-﻿using HospitalManagementApi.DAL.IRepository;
-using HospitalManagementApi.ViewModels;
+﻿using HospitalManagementApi.DAL.IRepositories;
+using HospitalManagementApi.Models;
+using HospitalManagementApi.Models.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -18,16 +19,18 @@ namespace HospitalManagementApi.Controllers
         {
             this._iOutDoorConsultancy = iOutDoorConsultancy;
         }
-        [HttpGet]
-        public async Task<ActionResult> GetAll()
+        [HttpGet("GetAll")]
+        public async Task<object> GetAll()
         {
             try
             {
-                return Ok(await _iOutDoorConsultancy.GetAll());
+                var outdoorConsultancy = await _iOutDoorConsultancy.GetAll();
+                return Ok(outdoorConsultancy);
+
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
         [HttpGet("{id:int}")]
@@ -47,44 +50,48 @@ namespace HospitalManagementApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
             }
         }
-        [HttpPost]
-        public async Task<ActionResult<OutDoorConsultancyViewModel>> Insert(OutDoorConsultancyViewModel obj)
+        [HttpPost("Insert")]
+        public async Task<object> Insert([FromBody] OutDoorConsultancyViewModel obj)
         {
             try
             {
                 if (obj == null)
                 {
-                    return BadRequest();
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data object missing", null));
                 }
                 var consultancy = await _iOutDoorConsultancy.GetById(obj.OutDoorId);
                 if (consultancy != null)
                 {
-                    ModelState.AddModelError("", "OutDoorConsultancy is already Add");
-                    return BadRequest(ModelState);
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data already exist", consultancy));
                 }
+                int serialNo = await _iOutDoorConsultancy.GetSerialNo(obj.DoctorId, obj.EntryDate);
+                obj.SerialNo = serialNo;
                 var returnObj = await _iOutDoorConsultancy.Insert(obj);
-                return CreatedAtAction(nameof(GetAll), new { id = returnObj }, returnObj);
+                return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Data entry successful", returnObj));
             }
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
             }
         }
-        [HttpPut("{id:int}")]
-        public async Task<ActionResult<OutDoorConsultancyViewModel>> Update(int id, OutDoorConsultancyViewModel obj)
+        [HttpPut("Update")]
+        public async Task<object> Update([FromBody] OutDoorConsultancyViewModel obj)
         {
             try
             {
-                if (id != obj.OutDoorId)
-                {
-                    return BadRequest("OutDoorConsultancy Id mismatch");
-                }
-                var consultancy = await _iOutDoorConsultancy.GetById(id);
+
+                var consultancy = await _iOutDoorConsultancy.GetById(obj.OutDoorId);
                 if (consultancy == null)
                 {
-                    return NotFound();
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data object misssing", null));
                 }
-                return await _iOutDoorConsultancy.Update(obj);
+                if (obj.DoctorId != consultancy.DoctorId || Convert.ToDateTime(obj.EntryDate) != Convert.ToDateTime(consultancy.EntryDate))
+                {
+                    int serialNo = await _iOutDoorConsultancy.GetSerialNo(obj.DoctorId, obj.EntryDate);
+                    obj.SerialNo = serialNo;
+                }
+                var returnObj = await _iOutDoorConsultancy.Update(obj);
+                return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Data updated succesfully", returnObj));
             }
             catch (Exception)
             {
@@ -109,5 +116,6 @@ namespace HospitalManagementApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
             }
         }
+
     }
 }

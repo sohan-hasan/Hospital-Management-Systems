@@ -1,9 +1,12 @@
-﻿using HospitalManagementApi.DAL.IRepository;
-using HospitalManagementApi.ViewModels;
+﻿using HospitalManagementApi.DAL.IRepositories;
+using HospitalManagementApi.Models;
+using HospitalManagementApi.Models.ViewModels;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -14,20 +17,24 @@ namespace HospitalManagementApi.Controllers
     public class CabinInfoController : ControllerBase
     {
         private readonly ICabinInfoRepository _iCabinInfoRepository;
-        public CabinInfoController(ICabinInfoRepository iCabinInfoRepository)
+        private readonly IWebHostEnvironment _iWebHostEnvironment;
+
+        public CabinInfoController(ICabinInfoRepository iCabinInfoRepository, IWebHostEnvironment iWebHostEnvironment)
         {
             _iCabinInfoRepository = iCabinInfoRepository;
+            _iWebHostEnvironment = iWebHostEnvironment;
         }
-        [HttpGet]
+        [HttpGet("GetAll")]
         public async Task<ActionResult> GetAll()
         {
             try
             {
-                return Ok(await _iCabinInfoRepository.GetAll());
+                var cabinInfoList = await _iCabinInfoRepository.GetAll();
+                return Ok(cabinInfoList);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message); ;
             }
         }
         [HttpGet("{id:int}")]
@@ -47,49 +54,91 @@ namespace HospitalManagementApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
             }
         }
-        [HttpPost]
-        public async Task<ActionResult<CabinInfoViewModel>> Insert(CabinInfoViewModel obj)
+        [HttpPost("Insert")]
+        public async Task<object> Insert([FromForm] CabinInfoViewModel obj)
         {
+
             try
             {
+                string uniqueImageName = "";
+
+                if (obj.Photo != null)
+                {
+                    string uploadFolder = Path.Combine(_iWebHostEnvironment.WebRootPath, "images/cabin_images");
+                    uniqueImageName = Guid.NewGuid().ToString() + "_" + obj.Photo.FileName;
+                    string filePath = Path.Combine(uploadFolder, uniqueImageName);
+                    FileStream fileStream = new FileStream(filePath, FileMode.Create);
+                    obj.Photo.CopyTo(fileStream);
+                    fileStream.Close();
+                    obj.ImageName = uniqueImageName;
+                }
                 if (obj == null)
                 {
-                    return BadRequest();
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data Object Missing", null));
                 }
                 var cabin = await _iCabinInfoRepository.GetById(obj.CabinId);
                 if (cabin != null)
                 {
-                    ModelState.AddModelError("", "Cabin is already Add");
-                    return BadRequest(ModelState);
+                    ModelState.AddModelError("", "Cabin is already Added.");
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data Object Missing", null));
                 }
+                obj.BookingStatus = 1;
                 var returnObj = await _iCabinInfoRepository.Insert(obj);
-                return CreatedAtAction(nameof(GetAll), new { id = returnObj.CabinId }, returnObj);
+                return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Data inserted successfully", returnObj));
+            }
+            catch (Exception)
+            {
+                return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Error retrieving data from database", null));
+            }
+        }
+        [HttpPut("Update")]
+        public async Task<object> Update([FromForm] CabinInfoViewModel obj)
+        {
+            try
+            {
+                string uniqueImageName = "";
+                if (obj.CabinId > 0)
+                {
+                    if (obj.Photo != null)
+                    {
+                        string uploadFolder = Path.Combine(_iWebHostEnvironment.WebRootPath, "images/cabin_images");
+                        if (obj.ImageName != null)
+                        {
+                            DeleteExistingImage(Path.Combine(uploadFolder, obj.ImageName));
+                        }
+                        uniqueImageName = Guid.NewGuid().ToString() + "_" + obj.Photo.FileName;
+                        string filePath = Path.Combine(uploadFolder, uniqueImageName);
+                        FileStream fileStream = new FileStream(filePath, FileMode.Create);
+                        obj.Photo.CopyTo(fileStream);
+                        fileStream.Close();
+                        obj.ImageName = uniqueImageName;
+                    }
+
+                }
+
+                var cabin = await _iCabinInfoRepository.GetById(obj.CabinId);
+                if (cabin == null)
+                {
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Error retrieving data from database", null));
+                }
+                obj.BookingStatus = 1;
+                var returnObj = await _iCabinInfoRepository.Update(obj);
+                return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Data updated successfully", null));
             }
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
             }
         }
-        [HttpPut("{id:int}")]
-        public async Task<ActionResult<CabinInfoViewModel>> Update(int id, CabinInfoViewModel obj)
+
+        private void DeleteExistingImage(string imagePath)
         {
-            try
+            FileInfo fileObj = new FileInfo(imagePath);
+            if (fileObj.Exists)
             {
-                if (id != obj.CabinId)
-                {
-                    return BadRequest("Cabin Id mismatch");
-                }
-                var cabin = await _iCabinInfoRepository.GetById(id);
-                if (cabin == null)
-                {
-                    return NotFound();
-                }
-                return await _iCabinInfoRepository.Update(obj);
+                fileObj.Delete();
             }
-            catch (Exception)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
-            }
+
         }
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> Delete(int id)
@@ -107,6 +156,19 @@ namespace HospitalManagementApi.Controllers
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
+            }
+        }
+        [HttpGet("GetByTypeId")]
+        public async Task<ActionResult> GetByTypeId(int id)
+        {
+            try
+            {
+                var cabinInfoList = await _iCabinInfoRepository.GetByTypeId(id);
+                return Ok(cabinInfoList);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message); ;
             }
         }
     }

@@ -24,6 +24,13 @@
 
 	<ItemGroup>
 	  <Folder Include="wwwroot\images\doctor_images\" />
+	  <Folder Include="wwwroot\images\cabin_images\" />
+	  <Folder Include="wwwroot\images\employee_images\" />
+	  <Folder Include="wwwroot\images\product_images\" />
+	  <Folder Include="wwwroot\images\supplier_images\" />
+	  <Folder Include="wwwroot\images\patient_images\" />
+	  <Folder Include="wwwroot\images\ward_images\" />
+	  <Folder Include="wwwroot\images\user_images\" />
 	</ItemGroup>
 
 </Project>

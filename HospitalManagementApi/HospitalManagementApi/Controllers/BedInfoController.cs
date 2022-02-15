@@ -1,5 +1,7 @@
-﻿using HospitalManagementApi.DAL.IRepository;
-using HospitalManagementApi.ViewModels;
+﻿using HospitalManagementApi.DAL.IRepositories;
+using HospitalManagementApi.Models;
+using HospitalManagementApi.Models.ViewModels;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,21 +15,24 @@ namespace HospitalManagementApi.Controllers
     [ApiController]
     public class BedInfoController : ControllerBase
     {
-        private readonly IBedInfoRepository _iBedInfoRepository;
-        public BedInfoController(IBedInfoRepository IBedInfoRepository)
+        private readonly IBedInfoRepsoitory _iBedInfoRepository;
+        private readonly IWebHostEnvironment _iWebHostEnvironment;
+        public BedInfoController(IBedInfoRepsoitory iBedInfoRepository, IWebHostEnvironment iWebHostEnvironment)
         {
-            _iBedInfoRepository = IBedInfoRepository;
+            _iBedInfoRepository = iBedInfoRepository;
+            _iWebHostEnvironment = iWebHostEnvironment;
         }
-        [HttpGet]
+        [HttpGet("GetAll")]
         public async Task<ActionResult> GetAll()
         {
             try
             {
-                return Ok(await _iBedInfoRepository.GetAll());
+                var bedInfoList = await _iBedInfoRepository.GetAll();
+                return Ok(bedInfoList);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message); ;
             }
         }
         [HttpGet("{id:int}")]
@@ -47,44 +52,43 @@ namespace HospitalManagementApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
             }
         }
-        [HttpPost]
-        public async Task<ActionResult<BedInfoViewModel>> Insert(BedInfoViewModel obj)
+        [HttpPost("Insert")]
+        public async Task<object> Insert([FromBody] BedInfoViewModel obj)
         {
             try
             {
                 if (obj == null)
                 {
-                    return BadRequest();
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data object missing", null));
                 }
                 var bed = await _iBedInfoRepository.GetById(obj.BedId);
                 if (bed != null)
                 {
-                    ModelState.AddModelError("", "Bed is already Add");
-                    return BadRequest(ModelState);
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data already exist", bed));
                 }
+                obj.BookingStatus = 1;
                 var returnObj = await _iBedInfoRepository.Insert(obj);
-                return CreatedAtAction(nameof(GetAll), new { id = returnObj.BedId }, returnObj);
+                return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Data entry successful", returnObj));
             }
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
             }
         }
-        [HttpPut("{id:int}")]
-        public async Task<ActionResult<BedInfoViewModel>> Update(int id, BedInfoViewModel obj)
+        [HttpPut("Update")]
+        public async Task<object> Update([FromBody] BedInfoViewModel obj)
         {
             try
             {
-                if (id != obj.BedId)
-                {
-                    return BadRequest("Bed Id mismatch");
-                }
-                var bed = await _iBedInfoRepository.GetById(id);
+
+                var bed = await _iBedInfoRepository.GetById(obj.BedId);
                 if (bed == null)
                 {
-                    return NotFound();
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data object misssing", null));
                 }
-                return await _iBedInfoRepository.Update(obj);
+                obj.BookingStatus = 1;
+                var returnObj = await _iBedInfoRepository.Update(obj);
+                return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Data updated succesfully", returnObj));
             }
             catch (Exception)
             {
@@ -96,8 +100,8 @@ namespace HospitalManagementApi.Controllers
         {
             try
             {
-                var bed = await _iBedInfoRepository.GetById(id);
-                if (bed == null)
+                var consultancy = await _iBedInfoRepository.GetById(id);
+                if (consultancy == null)
                 {
                     return NotFound();
                 }
@@ -107,6 +111,19 @@ namespace HospitalManagementApi.Controllers
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
+            }
+        }
+        [HttpGet("GetByWardNo")]
+        public async Task<ActionResult> GetByTypeId(int id)
+        {
+            try
+            {
+                var bedlist = await _iBedInfoRepository.GetByWardNo(id);
+                return Ok(bedlist);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message); ;
             }
         }
     }

@@ -1,9 +1,11 @@
-﻿using HospitalManagementApi.DAL.IRepository;
-using HospitalManagementApi.ViewModels;
+﻿using HospitalManagementApi.DAL.IRepositories;
+using HospitalManagementApi.Models;
+using HospitalManagementApi.Models.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -18,18 +20,21 @@ namespace HospitalManagementApi.Controllers
         {
             _iAppointmentInfoRepository = IAppointmentInfoRepository;
         }
-        [HttpGet]
+        [HttpGet("GetAll")]
         public async Task<ActionResult> GetAll()
         {
             try
             {
-                return Ok(await _iAppointmentInfoRepository.GetAll());
+                var appointment = await _iAppointmentInfoRepository.GetAll();
+                return Ok(appointment);
+              
             }
             catch (Exception)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
             }
         }
+      
         [HttpGet("{id:int}")]
         public async Task<ActionResult<AppointmentInfoViewModel>> GetById(int id)
         {
@@ -47,44 +52,51 @@ namespace HospitalManagementApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
             }
         }
-        [HttpPost]
-        public async Task<ActionResult<AppointmentInfoViewModel>> Insert(AppointmentInfoViewModel obj)
-        {
+        [HttpPost("Insert")]
+        public async Task<object> Insert([FromBody] AppointmentInfoViewModel obj)
+           {
             try
             {
+                
+
                 if (obj == null)
                 {
-                    return BadRequest();
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data object Error", null));
                 }
                 var appointment = await _iAppointmentInfoRepository.GetById(obj.AppointmentId);
                 if (appointment != null)
                 {
-                    ModelState.AddModelError("", "Appointment is already Add");
-                    return BadRequest(ModelState);
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data alrady Exist", null));
                 }
+                int serialNo = await _iAppointmentInfoRepository.GetSerialNo(obj.DoctorId, obj.AppointmentDate);
+                obj.SerialNo = serialNo;
                 var returnObj = await _iAppointmentInfoRepository.Insert(obj);
-                return CreatedAtAction(nameof(GetAll), new { id = returnObj.AppointmentId }, returnObj);
+                return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Appointment info Inserted", returnObj));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
-        [HttpPut("{id:int}")]
-        public async Task<ActionResult<AppointmentInfoViewModel>> Update(int id, AppointmentInfoViewModel obj)
+        [HttpPut("Update")]
+        public async Task<object> Update([FromBody]AppointmentInfoViewModel obj)
         {
             try
             {
-                if (id != obj.AppointmentId)
-                {
-                    return BadRequest("Appointment Id mismatch");
-                }
-                var appointment = await _iAppointmentInfoRepository.GetById(id);
+                
+                var appointment = await _iAppointmentInfoRepository.GetById(obj.AppointmentId);
                 if (appointment == null)
                 {
-                    return NotFound();
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data object Error", null));
                 }
-                return await _iAppointmentInfoRepository.Update(obj);
+                if (obj.DoctorId!=appointment.DoctorId || Convert.ToDateTime(obj.AppointmentDate) != Convert.ToDateTime(appointment.AppointmentDate))
+                {
+                    int serialNo = await _iAppointmentInfoRepository.GetSerialNo(obj.DoctorId, obj.AppointmentDate);
+                    obj.SerialNo = serialNo;
+                }
+               
+                var returnObj = await _iAppointmentInfoRepository.Update(obj);
+                return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Appointment info Updated Successfully", returnObj));
             }
             catch (Exception)
             {
@@ -109,6 +121,11 @@ namespace HospitalManagementApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
             }
         }
+
     }
 }
+
+
+
+
 

@@ -1,5 +1,7 @@
-﻿using HospitalManagementApi.DAL.IRepository;
-using HospitalManagementApi.ViewModels;
+﻿using HospitalManagementApi.DAL.IRepositories;
+using HospitalManagementApi.DAL.Repositories;
+using HospitalManagementApi.Models;
+using HospitalManagementApi.Models.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -18,77 +20,73 @@ namespace HospitalManagementApi.Controllers
         {
             this._itestInfoRepository = itestInfoRepository;
         }
-        [HttpGet]
+        [HttpGet("GetAll")]
         public async Task<ActionResult> GetAll()
         {
             try
             {
-                return Ok(await _itestInfoRepository.GetAll());
+                var testList = await _itestInfoRepository.GetAll();
+                return Ok(testList);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
-        [HttpGet("{id:int}")]
-        public async Task<ActionResult<TestInfoViewModel>> GetById(int id)
+        [HttpGet("GetById")]
+        public async Task<ActionResult> GetById(int id)
         {
             try
             {
-                var result = await _itestInfoRepository.GetById(id);
-                if (result == null)
-                {
-                    return NotFound();
-                }
-                return result;
+                var test = await _itestInfoRepository.GetById(id);
+                return Ok(test);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message); ;
             }
         }
-        [HttpPost]
-        public async Task<ActionResult<TestInfoViewModel>> Insert(TestInfoViewModel obj)
+        [HttpPost("Insert")]
+        public async Task<object> Insert([FromBody] TestInfoViewModel obj)
         {
             try
             {
                 if (obj == null)
                 {
-                    return BadRequest();
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data Missing", null));
+
                 }
                 var test = await _itestInfoRepository.GetById(obj.TestId);
                 if (test != null)
                 {
-                    ModelState.AddModelError("", "Test is already Add");
-                    return BadRequest(ModelState);
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data Already Exixt", null));
+
                 }
                 var returnObj = await _itestInfoRepository.Insert(obj);
-                return CreatedAtAction(nameof(GetAll), new { id = returnObj.TestId }, returnObj);
+                return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Data Insert Successfully", null));
+
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
-        [HttpPut("{id:int}")]
-        public async Task<ActionResult<TestInfoViewModel>> Update(int id, TestInfoViewModel obj)
+        [HttpPut("Update")]
+        public async Task<object> Update([FromBody] TestInfoViewModel obj)
         {
             try
             {
-                if (id != obj.TestId)
-                {
-                    return BadRequest("Test Id mismatch");
-                }
-                var test = await _itestInfoRepository.GetById(id);
+                var test = await _itestInfoRepository.GetById(obj.TestId);
                 if (test == null)
                 {
-                    return NotFound();
+                    return await Task.FromResult(new ResponseModel(ResponseCode.Error, "Data Object Missing", null));
                 }
-                return await _itestInfoRepository.Update(obj);
+                var returnObj = await _itestInfoRepository.Update(obj);
+                return await Task.FromResult(new ResponseModel(ResponseCode.OK, "Data updated successfully", returnObj));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
         [HttpDelete("{id:int}")]
@@ -104,9 +102,22 @@ namespace HospitalManagementApi.Controllers
                 await _itestInfoRepository.Delete(id);
                 return Ok();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, "Error retriving data from database");
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+        [HttpGet("GetAllTestByCatagoryId")]
+        public async Task<ActionResult> GetAllTestByCatagoryId(int id)
+        {
+            try
+            {
+                var testList = await _itestInfoRepository.GetAllTestByCatagoryId(id);
+                return Ok(testList);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message); ;
             }
         }
     }
